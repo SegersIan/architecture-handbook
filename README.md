@@ -1,6 +1,17 @@
-# The Archtecture Handbook
+## The Archtecture Handbook
 Written and compiled by Ian Segers as personal guide for his job as Solution Architect.
+In case you are reading this directyly from GitHub, you can read this rendered on the [GitHub Page]https://segersian.github.io/architecture-handbook/).
 
+## Software Arhitecture
+
+### What is Software Architecture?
+
+* [Who Needs an Arhictect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
+
+### What is Enterprise Architecture?
+
+
+## Topics to cover
 * What is Software Architecture
 * What is Software Enterprise Architecture
 * How to do Enterprise Architecture 
@@ -26,6 +37,16 @@ Written and compiled by Ian Segers as personal guide for his job as Solution Arc
 * Discuss managed evolution, but go deeper, what it solves or does. Like, IT allignment. Circle that back to the enterprise architecture and understand how the role of IT is perceived and the relation.
 * Discuss evolutionary psychology
 * Emphasize how 'data' and *'relations/connections* impact architecture.
+* The concepts of "lenses/views" and how they can be used. Which are they, and when to use which ones?
+* Role of conways law in architecture
+* Operational aspects of architects
+    * Architectural Decision Records
+    * Record exceptions
+    * Exceptions are ok, just measure how many you make.
+* Look at managed evolution KPIs
+* Make a throrough list of fitness function examples
+* Make a reference list of all the -ilities that we can think off.
+
 * Resources
 
 
