@@ -13,6 +13,9 @@ Written and compiled by Ian Segers as personal guide for his job as Solution Arc
     * Obtain process about the process and refine
     * Coach and mentor the people on the journey/road
     * Somewhere side track from this steps in also things like Business capabilities and such.
+* How to get "TRUST" from the engineering team, and how to measure it (doing surveys for example)
+* How to get architecture in the "AGILE" or "SAFE" ecosystem ?
+* How to get architecture adapted all together
 * What are architectural styles and can they co-exist ?
 * Where/how does "clean Architecture" fit in ?
 * Make a good split and difference between architecture and enterprise architecture
