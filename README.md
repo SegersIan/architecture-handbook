@@ -112,6 +112,10 @@ In [Building Evolutionary Architectures](https://www.oreilly.com/library/view/bu
 
 **As an architect, you should take this in consideration. Try to define your architecture in a way that allows and expect change over time. Business and its requirements change constantly, as the technologies and platforms that support them.**
 
+### Understanding Needs
+
+To do good architecture, one must really try to understand the **needs of all the stakeholders** involved, and **understand their priorities**.
+
 ## Usefull
 
 * [Thought Leaders](thought-leaders.md)

@@ -2,6 +2,8 @@
 
 Architecture styles can be use for the architecture of a whole system, but these styles can be also combined. One does not exclude the use of others.
 
+As per usual, you need to select the style(s) based on your needs. Remember, as an architect, you must understand your needs for the system.
+
 ## Foundations
 
 ### (Anti) Patterns
@@ -20,7 +22,7 @@ Architecture styles can be use for the architecture of a whole system, but these
 
 ### Monolithic vs Distributed Architectures
 
-Neither is better than the other, each answers a specific set of needs.
+Neither is better than the other, each answers a specific set of needs. 
 
 ### Distributed Architecture Considerations
 
