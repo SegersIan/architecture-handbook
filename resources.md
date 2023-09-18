@@ -23,3 +23,4 @@
 * [Managed Evolution](https://link.springer.com/book/10.1007/978-3-642-01633-2)
 * [Software Architecture: The Hard Parts](https://architecturethehardparts.com/)
 * [The Software Architect Elevator](https://www.amazon.com/gp/product/1492077542/ref=as_li_tl)
+* [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer)

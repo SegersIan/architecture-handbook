@@ -1,5 +1,4 @@
 ## Topics to cover - AKA THE TODO
-* What is Software Architecture
 * What is Software Enterprise Architecture
 * How to do Enterprise Architecture 
     * Understand the perceived role of IT
@@ -21,6 +20,7 @@
 * Consider on how to discuss the points of Software Architecture and the hard parts book
 * Consider how the architect elevator fits the big picture.
 * Discuss the architectural styles
+* Evolutionary Architecture - Go deeper with the fitness function and such. Circle back to "Defining charachteristics".
 * Discuss managed evolution, but go deeper, what it solves or does. Like, IT allignment. Circle that back to the enterprise architecture and understand how the role of IT is perceived and the relation.
 * Discuss evolutionary psychology
 * Emphasize how 'data' and *'relations/connections* impact architecture.

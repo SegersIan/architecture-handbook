@@ -1,6 +1,25 @@
 ## The Archtecture Handbook
+
 Written and compiled by Ian Segers as personal guide for his job as Solution Architect.
 In case you are reading this directyly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/).
+
+## Systems
+
+Before we dive into Software Architecture, we must talk about Systems.
+
+For a System we can find definitions like:
+
+> a set of things working together as parts of a mechanism or an interconnecting network; a complex whole.
+
+Or more specifically for Software Systems:
+
+> System software is a set of generalized programs that manage the resources of the computer, such as the central processing unit, communication links, and peripheral devices
+
+However, as you will read further about *Evolutionary Architecture*, U personally like to keep the following definition in mind:
+
+> a group of body organs that together perform one or more vital functions
+
+Either way, a **System** is a concept, far more general than IT systems. There is event a whole field of [Systems Thinking](https://en.wikipedia.org/wiki/Systems_thinking). If you want to read more about it, I suggest [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer).
 
 ## Software Arhitecture
 
@@ -79,9 +98,17 @@ In addition to these core expectations, there are many more and this will change
 
 Note that (7) and (8) are cruccial for the ability of the architect to have effective impact and to execute change.
 
-### What is Enterprise Architecture?
+### Evolutionary Architecture
 
-...todo
+That change is constant, is a fundamental fact for many areas of life. This is no different for software systems and software architecture. 
+
+Architecture will have to evolve, if the systems wants to survive over a long time. A system is like a biological organism, it must adapt and change to survive. Survival of the fittest is a law that also exists for organisations and the systems that support them.
+
+> Survival of the fittest... suggestes that organisms best adjusted to their environment are the most successful in surviving and reproducing.
+
+In [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/) the authors build further on the concept of Evolutionary Architectures.
+
+**As an architect, you should take this in consideration. Try to define your architecture in a way that allows and expect change over time. Business and its requirements change constantly, as the technologies and platforms that support them.**
 
 ## Usefull
 
