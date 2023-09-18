@@ -30,7 +30,7 @@ In case you are reading this directyly from GitHub, you can read this rendered o
 * What are architectural styles and can they co-exist ?
 * Where/how does "clean Architecture" fit in ?
 * Make a good split and difference between architecture and enterprise architecture
-* What is the difference between architecture and design
+* What is the difference between architecture and design, or "systen design".
 * Consider on how to discuss the points of Software Architecture and the hard parts book
 * Consider how the architect elevator fits the big picture.
 * Discuss the architectural styles
@@ -48,5 +48,7 @@ In case you are reading this directyly from GitHub, you can read this rendered o
 * Make a reference list of all the -ilities that we can think off.
 
 * Resources
+
+* Thought leaders and people to follow in the industry
 
 
