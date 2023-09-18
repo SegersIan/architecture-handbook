@@ -3,6 +3,8 @@
 Written and compiled by Ian Segers as personal guide for his job as Solution Architect.
 In case you are reading this directly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/).
 
+This is a static website which gets easily cached. To make sure to have the latests contents, do a hard refresh (CTRL + SHIFT + R for windows).
+
 ## Systems
 
 Before we dive into Software Architecture, we must talk about Systems.
