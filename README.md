@@ -41,7 +41,7 @@ Software Architecture consists of:
 
 #### 1. Structure of the system
 
-> Refers to the [**architectural style(s)**](architecture-styles.md) the system is implemented in. 
+> Refers to the [**architectural style(s)**](architecture-styles/readme.md) the system is implemented in. 
 > When we talk about an micro-service architecture, we're talking about the structure of the system, not the architecture, cause the architecture also describes the characteristics, decisions, and design principles.
 
 [Structure Of the System Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0103.png)
