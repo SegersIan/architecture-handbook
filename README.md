@@ -6,12 +6,20 @@ In case you are reading this directyly on [GitHub](https://github.com/SegersIan/
 
 ### What is Software Architecture?
 
-* [Who Needs an Arhictect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
+* [Who Needs an Architect](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 ### What is Enterprise Architecture?
 
+## Thought Leaders
 
-## Topics to cover
+See [Thought Leaders](thought-leaders.md)
+
+## Resources
+
+See [Resources](resources.md)
+
+
+## Topics to cover - AKA THE TODO
 * What is Software Architecture
 * What is Software Enterprise Architecture
 * How to do Enterprise Architecture 
@@ -48,7 +56,4 @@ In case you are reading this directyly on [GitHub](https://github.com/SegersIan/
 * Make a reference list of all the -ilities that we can think off.
 
 * Resources
-
-* Thought leaders and people to follow in the industry
-
 

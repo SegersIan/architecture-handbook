@@ -1,0 +1,18 @@
+## Resources
+
+### Websites
+
+* https://www.datamesh-architecture.com/
+
+### Recommended Books
+
+*Note: I list only books that I have read and appreciate*
+
+* [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
+* [Clean Architecture](https://www.amazon.com/dp/0134494164)
+* [Domain-Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
+* [Enterprise Integration Patterns](https://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20)
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
+* [Managed Evolution](https://link.springer.com/book/10.1007/978-3-642-01633-2)
+* [Software Architecture: The Hard Parts](https://architecturethehardparts.com/)
+* [The Software Architect Elevator](https://www.amazon.com/gp/product/1492077542/ref=as_li_tl)
