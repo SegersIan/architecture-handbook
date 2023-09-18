@@ -3,6 +3,7 @@
 ### Websites
 
 * [https://www.datamesh-architecture.com/](https://www.datamesh-architecture.com/)
+* [https://www.developertoarchitect.com/](https://www.developertoarchitect.com/)
 
 ### Articles/Blog/Posts
 
