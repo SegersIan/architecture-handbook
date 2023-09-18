@@ -19,7 +19,7 @@ In addition to that, he also has a ["signature series"](https://www.informit.com
 
 * Website: [nealford.com](https://nealford.com/)
 
-Author of **many** [books](https://nealford.com/books/) like [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/), [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/), and [https://architecturethehardparts.com/](https://architecturethehardparts.com/).
+Author of **many** [books](https://nealford.com/books/) like [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/), [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/), and [Software Architecture: The Hard Parts](https://architecturethehardparts.com/).
 He works for the infamous ThoughtWorks which has many thought leaders and relevant authors on its payroll.
 
 ### Gregor Hohpe
