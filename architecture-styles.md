@@ -6,28 +6,28 @@
 
 ### Pipeline
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1101.png)
+![Pipeline Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1101.png)
 
 ### Microservices
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1201.png)
+![Microservices Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1201.png)
 
 ### Service-Based
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1301.png)
+![Service-Based Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1301.png)
 
 ### Event-Driven
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1401.png)
+![Event-Driven Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1401.png)
 
 ### Space-Based
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1501.png)
+![Space-Based Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1501.png)
 
 ### Orchestration-Driven Service-Oriented
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1601.png)
+![Orchestration-Driven Service-Oriented Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1601.png)
 
 ### Microservices
 
-![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1701.png)
+![Microservices Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1701.png)
