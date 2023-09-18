@@ -7,7 +7,7 @@ In case you are reading this directyly on [GitHub](https://github.com/SegersIan/
 
 Before we dive into Software Architecture, we must talk about Systems.
 
-For a System we can find definitions like:
+For a System we can find a definition like:
 
 > a set of things working together as parts of a mechanism or an interconnecting network; a complex whole.
 
@@ -15,11 +15,11 @@ Or more specifically for Software Systems:
 
 > System software is a set of generalized programs that manage the resources of the computer, such as the central processing unit, communication links, and peripheral devices
 
-However, as you will read further about *Evolutionary Architecture*, U personally like to keep the following definition in mind:
+However, as you will read further about *Evolutionary Architecture* you might understand why I personally like to keep the following definitio:
 
 > a group of body organs that together perform one or more vital functions
 
-Either way, a **System** is a concept, far more general than IT systems. There is event a whole field of [Systems Thinking](https://en.wikipedia.org/wiki/Systems_thinking). If you want to read more about it, I suggest [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer).
+Either way, a **System** is a concept, far more general than software/IT systems. There is a field of [Systems Thinking](https://en.wikipedia.org/wiki/Systems_thinking). If you want to read more about it, I suggest [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer).
 
 ## Software Arhitecture
 

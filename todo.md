@@ -33,3 +33,4 @@
 * Look at managed evolution KPIs
 * Make a throrough list of fitness function examples
 * Make a reference list of all the -ilities that we can think off.
+*most IT professionals hear "domain events" and assume "event-driven" 
