@@ -6,6 +6,8 @@
 
 ### Articles/Blog/Posts
 
+*Note: I list only Articles/Blog/Posts that I have read and appreciate*
+
 * [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 ### Recommended Books
