@@ -1,7 +1,7 @@
 ## The Archtecture Handbook
 
 Written and compiled by Ian Segers as personal guide for his job as Solution Architect.
-In case you are reading this directyly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/).
+In case you are reading this directly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/).
 
 ## Systems
 
