@@ -2,7 +2,11 @@
 
 ### Websites
 
-* https://www.datamesh-architecture.com/
+* [https://www.datamesh-architecture.com/](https://www.datamesh-architecture.com/)
+
+### Articles/Blog/Posts
+
+* [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
 ### Recommended Books
 
