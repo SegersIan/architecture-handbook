@@ -8,17 +8,21 @@ As per usual, you need to select the style(s) based on your needs. Remember, as 
 
 ### (Anti) Patterns
 
-* Big Ball of Mud
+*This section might be moved to a page of it's own, listing all (anti) patterns.
+
+* Big Ball of Mud (Anti Pattern)
     * Absence of architecture, or absence of architecture governance (making sure the vision is followed).
     * No real structure
     * [Orignal Whitepaper](https://www.researchgate.net/publication/2938621_Big_Ball_of_Mud)
-* Unitary Architecture
+* Unitary Architecture (Pattern)
     * System lives on one piece of hardware, no integrations or such.
     * e.g. Embedded systems
-* Client/Server
+* Client/Server (Pattern)
     * Desktop + database server
     * Browser + web server
     * Three-Tier 
+* Architecture by implication (Anti Pattern)
+* Accident Architecture (Anti Pattern)
 
 ### Monolithic vs Distributed Architectures
 
@@ -43,9 +47,17 @@ Other considerations:
 * Distributed transactions
 * Contract maintenance and versioning (evolution)
 
+### Physical units vs Logical Components
+
+A logical component is a grouping of responsibilities (namespace), the physical units refers to units of deployablility (e.g. JARs or DLLs). Physicall units can still co-exist on the same host. They don't need to be distributted over different hosts.
+
 ## Monolithic Styles
 
 ### Layered Architecture Style
+
+*Alternative names: n-tier architecture*
+
+Components within the layered architecture style are organized logical horizontal layers, each layer performing a specific role within the application. The amount of layers is not fixed, but 3 or 4 tiers are most common. Physically layering can exist in numerous combinations.
 
 ![Layered Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1001.png)
 

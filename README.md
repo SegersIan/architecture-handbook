@@ -114,7 +114,7 @@ In [Building Evolutionary Architectures](https://www.oreilly.com/library/view/bu
 
 ### Understanding Needs
 
-To do good architecture, one must really try to understand the **needs of all the stakeholders** involved, and **understand their priorities**.
+To do good architecture, one must really try to understand the **needs of all the stakeholders** involved, and **understand their priorities**. **All your architectural decisions should be guided by the this**.
 
 ## Usefull
 

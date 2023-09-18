@@ -35,3 +35,4 @@
 * Make a reference list of all the -ilities that we can think off.
 * Domain Events, Event Driven Architecure, Even Sourcing...
     * https://martinfowler.com/articles/201701-event-driven.html
+* "Emerging design/architecture"
