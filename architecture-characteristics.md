@@ -1,4 +1,4 @@
-## A list of Architecture Characteristics
+# A list of Architecture Characteristics
 
 Characteristics describe our desired behaviour of a system across different dimensions. it is important to understand the desired characteristics and to make an explicit commitment to them. A system must not comply or concern itself about all the possible Architecture Characteristics that we can think of, cause for each system, this will differ.
 
@@ -6,7 +6,7 @@ What is important, is that a conscious and explicit decision is made of what Arc
 
 *Note: This is a non exhaustive list.*
 
-### Operactional
+## Operactional
 
 * Availability
 * Continuity
@@ -16,7 +16,7 @@ What is important, is that a conscious and explicit decision is made of what Arc
 * Robustness
 * Scalability
 
-### Structural
+## Structural
 
 * Configurability
 * Extensability
@@ -28,7 +28,7 @@ What is important, is that a conscious and explicit decision is made of what Arc
 * Supportability
 * Upgradeability
 
-### Cross-Cutting
+## Cross-Cutting
 
 * Accessability
 * Archivability

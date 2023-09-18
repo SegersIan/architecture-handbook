@@ -1,18 +1,18 @@
-## Resources
+# Resources
 
-### Websites
+## Websites
 
 * [https://www.datamesh-architecture.com/](https://www.datamesh-architecture.com/)
 * [https://www.developertoarchitect.com/](https://www.developertoarchitect.com/)
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
 
-### Articles/Blog/Posts
+## Articles/Blog/Posts
 
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 
-### Recommended Books
+## Recommended Books
 
 *Note: I list only books that I have read and appreciate*
 
