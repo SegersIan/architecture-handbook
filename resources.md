@@ -5,6 +5,7 @@
 * [https://www.datamesh-architecture.com/](https://www.datamesh-architecture.com/)
 * [https://www.developertoarchitect.com/](https://www.developertoarchitect.com/)
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
+* [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 
 ## Articles/Blog/Posts
 

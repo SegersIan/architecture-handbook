@@ -45,4 +45,5 @@
 * Technology radar and application radar
 * SAGA Pattern
     * Choreography (is basically event driven choreography, while orchestration is more SAGA as you would know it. I would do research if "SAGA Choreography" is really SAGA all together, read back the original whitepaper to validate.)
+    * https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
     * Orchestration 
