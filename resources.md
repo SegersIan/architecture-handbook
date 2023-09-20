@@ -11,6 +11,7 @@
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
+* [Replicated Data Consistency Explained Through Baseball](https://www.microsoft.com/en-us/research/wp-content/uploads/2011/10/ConsistencyAndBaseballReport.pdf)
 
 ## Recommended Books
 

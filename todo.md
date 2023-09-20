@@ -36,3 +36,6 @@
 * Domain Events, Event Driven Architecure, Even Sourcing...
     * https://martinfowler.com/articles/201701-event-driven.html
 * "Emerging design/architecture"
+* Add also something about all the database reading models, like eventual consistency and such. Cause this is very important when architecting or designing stuff, and the what you should take in consideration.
+    * https://www.microsoft.com/en-us/research/wp-content/uploads/2011/10/ConsistencyAndBaseballReport.pdf
+    * Also see the Data instensive applications
