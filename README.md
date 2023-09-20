@@ -25,7 +25,11 @@ Either way, a **System** is a concept, far more general than software/IT systems
 
 ## Software Arhitecture
 
-This section is based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/).
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### TODO
+
+Add input from *based on [Clean Architecture](https://www.amazon.com/dp/0134494164)* -> Chapter 15 'What is architecture'
 
 ### What is Software Architecture?
 
@@ -71,6 +75,8 @@ Example: "Wherever possible, leverage async communication for decoupling"
 
 ### What is a Software Architect?
 
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
 *There is much to be said about this, the scope and responsibilities of an Software Architect has evolved and continues to expand. Initially the role was very technical, in todays world we have roles like Technical, Solution and Enterprise architects.*
 
 *Architectural wisdom and ideas can very specific for their time they were documented. As technology constantly changes, many aspects regarding architecture will change along with that.*
@@ -100,7 +106,7 @@ In addition to these core expectations, there are many more and this will change
 
 Note that (7) and (8) are cruccial for the ability of the architect to have effective impact and to execute change.
 
-### Evolutionary Architecture
+## Evolutionary Architecture
 
 That change is constant, is a fundamental fact for many areas of life. This is no different for software systems and software architecture. 
 
@@ -112,9 +118,65 @@ In [Building Evolutionary Architectures](https://www.oreilly.com/library/view/bu
 
 **As an architect, you should take this in consideration. Try to define your architecture in a way that allows and expect change over time. Business and its requirements change constantly, as the technologies and platforms that support them.**
 
-### Understanding Needs
+## Understanding Needs
 
 To do good architecture, one must really try to understand the **needs of all the stakeholders** involved, and **understand their priorities**. **All your architectural decisions should be guided by the this**.
+
+## Foundations
+
+### Architectural Thinking
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Modularity
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Architectura Characteristics
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Component Based Thinking
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+## Component Principles
+
+### Component Chesion
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+### Component Coupling
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+### X is a Detail
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+
+## Techniques and Soft Skills
+
+### Architecture Decision
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Analyzing Architecture Risk
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Diagramming and Presenting Architecture
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Making Teams Effective
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Negitation and Leadership Skills
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
 
 ## Usefull
 

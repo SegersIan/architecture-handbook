@@ -17,6 +17,7 @@
 * Where/how does "clean Architecture" fit in ?
 * Make a good split and difference between architecture and enterprise architecture
 * What is the difference between architecture and design, or "systen design".
+    * See Clean Architecture first chapter ?
 * Consider on how to discuss the points of Software Architecture and the hard parts book
 * Consider how the architect elevator fits the big picture.
 * Discuss the architectural styles
@@ -42,6 +43,10 @@
 * Nuggets of wisdom list
     * Don't split services/domains on "entity", entity driven design I call it. Cause where goes to the entity independent, or aggregate of enttities business logic?
     * Your thoughts on the DRY principle, and using the rule of 3. You want to apply DRY for code that changes at the same time, for the same actor/end user. (e.g. a logic for a user vs admin that seems similar at first).
+    * Clean architecture book page 62
+        * v1: A module should be responsible to one, and only one, user ornstakeholder
+        * v2 (better): A module should be responsible to one, and only one, actor.
+            * Note: module can be a small as a single source file, so maybe it is not really DRY specific, but more a guide.
 * Technology radar and application radar
 * SAGA Pattern
     * Choreography (is basically event driven choreography, while orchestration is more SAGA as you would know it. I would do research if "SAGA Choreography" is really SAGA all together, read back the original whitepaper to validate.)
