@@ -31,6 +31,8 @@ Either way, a **System** is a concept, far more general than software/IT systems
 
 Add input from *based on [Clean Architecture](https://www.amazon.com/dp/0134494164)* -> Chapter 15 'What is architecture' chapter 15.
 
++ [The Software Architect Elevator](https://www.amazon.com/gp/product/1492077542/ref=as_li_tl) see "Architecture part" for more additional parts.
+
 ### What is Software Architecture?
 
 In software engineering we work with **(IT) systems**, so when we talk about the software architecture, we are talking about the **architecture of a system**, which can exist out out of many sub-systems, which on their own can exist out of many sub-systems and so on.
