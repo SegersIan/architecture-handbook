@@ -29,7 +29,7 @@ Either way, a **System** is a concept, far more general than software/IT systems
 
 ### TODO
 
-Add input from *based on [Clean Architecture](https://www.amazon.com/dp/0134494164)* -> Chapter 15 'What is architecture'
+Add input from *based on [Clean Architecture](https://www.amazon.com/dp/0134494164)* -> Chapter 15 'What is architecture' chapter 15.
 
 ### What is Software Architecture?
 
