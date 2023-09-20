@@ -154,6 +154,8 @@ To do good architecture, one must really try to understand the **needs of all th
 
 *based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
 
+- Add your thoughts on how this element is relevant in larger architectures, and about microservices , where if the service is small enough, it might be less "important". I think it's still relevant, to follow this,  but on a smaller scale. Cause it has a solid point to avoid "bleeding in" of external concepts/ideas/or such.
+
 
 ## Techniques and Soft Skills
 

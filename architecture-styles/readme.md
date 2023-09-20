@@ -70,6 +70,10 @@ A logical component is a grouping of responsibilities (namespace), the physical 
 | Simplicity             | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐         | ⭐⭐⭐        | ⭐               | ⭐                 | ⭐                                        | ⭐                 |
 | Testability            | ⭐⭐        | ⭐⭐⭐      | ⭐⭐⭐            |⭐⭐⭐⭐       | ⭐⭐            | ⭐                 | ⭐                                        | ⭐⭐⭐⭐          |
 
+## OThers ...
+
+### Hexagonal (Ports and Adapters) Architecture Style
+
 
 
 
