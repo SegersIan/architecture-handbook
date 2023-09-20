@@ -39,3 +39,7 @@
 * Add also something about all the database reading models, like eventual consistency and such. Cause this is very important when architecting or designing stuff, and the what you should take in consideration.
     * https://www.microsoft.com/en-us/research/wp-content/uploads/2011/10/ConsistencyAndBaseballReport.pdf
     * Also see the Data instensive applications
+* Nuggets of wisdom list
+    * Don't split services/domains on "entity", entity driven design I call it. Cause where goes to the entity independent, or aggregate of enttities business logic?
+    * Your thoughts on the DRY principle, and using the rule of 3. You want to apply DRY for code that changes at the same time, for the same actor/end user. (e.g. a logic for a user vs admin that seems similar at first).
+* Technology radar and application radar
