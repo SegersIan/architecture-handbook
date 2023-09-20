@@ -43,3 +43,6 @@
     * Don't split services/domains on "entity", entity driven design I call it. Cause where goes to the entity independent, or aggregate of enttities business logic?
     * Your thoughts on the DRY principle, and using the rule of 3. You want to apply DRY for code that changes at the same time, for the same actor/end user. (e.g. a logic for a user vs admin that seems similar at first).
 * Technology radar and application radar
+* SAGA Pattern
+    * Choreography (is basically event driven choreography, while orchestration is more SAGA as you would know it. I would do research if "SAGA Choreography" is really SAGA all together, read back the original whitepaper to validate.)
+    * Orchestration 
