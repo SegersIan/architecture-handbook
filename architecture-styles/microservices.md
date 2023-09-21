@@ -23,3 +23,7 @@
 | Scalability       | ⭐⭐⭐⭐⭐           |
 | Simplicity        | ⭐ |
 | Testability       | ⭐⭐⭐⭐        |
+
+## Resources
+
+* [Martin Fowler on Microservices](https://martinfowler.com/microservices/)

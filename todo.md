@@ -61,3 +61,5 @@ architecture by finding ways to eliminate irreversibility in software designs." 
 buildings are. It is limited by imagination, by design, by organization. In
 short, it is limited by properties of people, not by properties of the world. “We
 have met the enemy, and he is us.” - ralph johnson
+
+* DDD - I (IAN) would label it as a data/scope modelling tool, not an "structuring" tool.
