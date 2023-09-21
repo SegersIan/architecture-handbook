@@ -45,7 +45,8 @@ Software Architecture consists of:
 
 ![Software Architecture Definition](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0102.png)
 
-Another second common style of definition for architecture is that it's “the design decisions that need to be made early in a project”, but Ralph complained about this too, saying that it was more like the decisions you wish you could get right early in a project. - *((Martin fowler)[https://martinfowler.com/architecture/])*
+Another second common style of definition for architecture is that it's “the design decisions that need to be made early in a project”, but Ralph complained about this too, saying that it was more like the decisions you wish you could get right early in a project. His conclusion was that “Architecture is about the important stuff. Whatever that is” - *((Martin fowler)[https://martinfowler.com/architecture/])*
+    * Note that "what is important" means that (expert) developers decide what is important, a simple webapp, the DB could be important, but for a medical imaging app, a detail.
 
 #### 1. Structure of the system
 

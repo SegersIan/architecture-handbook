@@ -53,3 +53,11 @@
     * https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
     * Orchestration 
 * Hexagonal Architecture
+* https://martinfowler.com/articles/evodb.html evolutionary database change
+* ". I think that one of an architect’s most important tasks is to remove
+architecture by finding ways to eliminate irreversibility in software designs." martin fowler
+
+* "Software is not limited by physics, like
+buildings are. It is limited by imagination, by design, by organization. In
+short, it is limited by properties of people, not by properties of the world. “We
+have met the enemy, and he is us.” - ralph johnson
