@@ -45,6 +45,8 @@ Software Architecture consists of:
 
 ![Software Architecture Definition](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0102.png)
 
+Another second common style of definition for architecture is that it's “the design decisions that need to be made early in a project”, but Ralph complained about this too, saying that it was more like the decisions you wish you could get right early in a project. - *((Martin fowler)[https://martinfowler.com/architecture/])*
+
 #### 1. Structure of the system
 
 > Refers to the [**architectural style(s)**](architecture-styles/readme.md) the system is implemented in. 
