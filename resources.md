@@ -7,12 +7,13 @@
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
 * [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 
-## Articles/Blog/Posts
+## Articles/Blog/Posts/Whitepapers
 
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Who needs an architect?](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
-* [Replicated Data Consistency Explained Through Baseball](https://www.microsoft.com/en-us/research/wp-content/uploads/2011/10/ConsistencyAndBaseballReport.pdf)
+* [Replicated Data Consistency Explained Through Baseball](./attachments/whitepaper-data-consistency-baseball.pdf)
+* [Saga Pattern Whitepaper](./attachments/whitepaper-sagas.pdf)
 
 ## Recommended Books
 
