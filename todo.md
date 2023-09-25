@@ -71,3 +71,7 @@ have met the enemy, and he is us.” - ralph johnson
     * Application Architecture
     * Integration Architecture
     * Infrastructure Architecture
+
+## Framework thinking
+
+These notes are intended to help "framework thinking" on this topic
