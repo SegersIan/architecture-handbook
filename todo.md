@@ -63,3 +63,11 @@ short, it is limited by properties of people, not by properties of the world. ‚Ä
 have met the enemy, and he is us.‚Äù - ralph johnson
 
 * DDD - I (IAN) would label it as a data/scope modelling tool, not an "structuring" tool.
+
+
+## Managed Evolution Notes
+
+* Architecture domains/domains/fields
+    * Application Architecture
+    * Integration Architecture
+    * Infrastructure Architecture
