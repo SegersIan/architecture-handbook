@@ -80,3 +80,9 @@ These notes are intended to help "framework thinking" on this topic
 Discuss patterns or techniques which allow to gradually migrate from todays architecture/design to the target architecture/design.
 
 * Parallel Run
+* Dark launching
+* Feature toggles
+* Strangler pattern
+* Granualar roll out 
+* Feedback channels
+* ...
