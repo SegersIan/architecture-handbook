@@ -75,3 +75,8 @@ have met the enemy, and he is us.” - ralph johnson
 ## Framework thinking
 
 These notes are intended to help "framework thinking" on this topic
+
+## Architecture over time - patterns
+Discuss patterns or techniques which allow to gradually migrate from todays architecture/design to the target architecture/design.
+
+* Parallel Run
