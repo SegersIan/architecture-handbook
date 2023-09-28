@@ -22,11 +22,14 @@
 * Consider how the architect elevator fits the big picture.
 * Discuss the architectural styles
 * Evolutionary Architecture - Go deeper with the fitness function and such. Circle back to "Defining charachteristics".
+    * https://martinfowler.com/articles/evodb.html evolutionary database change
+    * See "Build microservices" book of sam newmann, which has "Evolutionary Architect" 
 * Discuss managed evolution, but go deeper, what it solves or does. Like, IT allignment. Circle that back to the enterprise architecture and understand how the role of IT is perceived and the relation.
 * Discuss evolutionary psychology
 * Emphasize how 'data' and *'relations/connections* impact architecture.
 * The concepts of "lenses/views" and how they can be used. Which are they, and when to use which ones?
 * Role of conways law in architecture
+    * See "Build microservices" book of sam newmann, which has "Evolutionary Architect" 
 * Operational aspects of architects
     * Architectural Decision Records
     * Record exceptions
@@ -53,7 +56,7 @@
     * https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga
     * Orchestration 
 * Hexagonal Architecture
-* https://martinfowler.com/articles/evodb.html evolutionary database change
+
 * ". I think that one of an architect’s most important tasks is to remove
 architecture by finding ways to eliminate irreversibility in software designs." martin fowler
 

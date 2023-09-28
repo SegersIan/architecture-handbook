@@ -4,7 +4,10 @@ Characteristics describe our desired behaviour of a system across different dime
 
 What is important, is that a conscious and explicit decision is made of what Architecture Characteristics are important for given system. In addition these decisions must be clear and prefferabily quantifiable so it is easy to asses of the system complies with desired characteristics or not.
 
-*Note: This is a non exhaustive list.*
+*Note 1: This is a non exhaustive list.*
+
+*Note 2: You could compare this to non-functional requirements for architecture.*
+
 
 ## Operactional
 
