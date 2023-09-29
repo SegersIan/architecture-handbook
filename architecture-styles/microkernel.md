@@ -70,7 +70,10 @@ Focus on the few areas where this is applicable. If not of the above meet your u
 
 ## Considerations
 
+None
+
 ## Characteristics
+
 | Characteristic    | Rating       |
 | ---               | ---          |
 | Partitioning Type | Domain & Technical    |
