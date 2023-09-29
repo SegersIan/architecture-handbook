@@ -89,3 +89,12 @@ Discuss patterns or techniques which allow to gradually migrate from todays arch
 * Granualar roll out 
 * Feedback channels
 * ...
+
+## Others
+
+* Think of guides or methodologies for several use cases
+    * When greenfield (Define new characteristics)
+    * When replacing systems (review desire characteritics, and current once, etc...)
+        * Did something change meanwhile ? Like stakeholders ? Or pure replace.
+    * When ...
+    * Tips of questions and concerns
