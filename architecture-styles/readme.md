@@ -53,22 +53,22 @@ A logical component is a grouping of responsibilities (namespace), the physical 
 
 ## Styles Comparison
 
-| Characteristic/Name    | [Layered](layered.md)  |[Pipeline](pipeline.md)   |[Microkernel](microkernel.md)    |[Service-Based](service-based.md)|  [Event-Driven](event-driven.md)|  [Space-Based](space-based.md)    |  [Orchestration-Driven Service-Oriented](orchestration-drive-service-oriented.md)|  [Microservices](microservices.md) |
-| ---                    | ---          |---            |---                | ---             | ---              | ---                 | ---                                       | ---                |
-| Monolithic/Distributed | Monolithic   | Monolithic    |Monolithic         | Distributed     | Distributed      | Distributed         | Distributed                               | Distributed        |
-| Partitioning Type      | Technical    |Technical      | Domain & Technical| Domain          | Technical         | Domain & Technical | Technical                                 | Domain             |
-| Number of quanta       | 1            | 1             |1                  |1 to many        | 1 to many         | 1                  | 1                                          | One to many       |
-| Deployability          | ⭐           | ⭐⭐        | ⭐⭐⭐           | ⭐⭐⭐⭐      |  ⭐⭐⭐          | ⭐⭐⭐           | ⭐                                        | ⭐⭐⭐⭐         |
-| Elasticity             | ⭐           | ⭐           | ⭐                | ⭐⭐           | ⭐⭐⭐          | ⭐⭐⭐⭐⭐       | ⭐⭐⭐                                  | ⭐⭐⭐⭐⭐       |
-| Evolutionary           | ⭐           | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐         | ⭐⭐⭐⭐⭐     | ⭐⭐⭐           | ⭐                                        | ⭐⭐⭐⭐⭐       |
-| Fault Tolerance        | ⭐           | ⭐           | ⭐                | ⭐⭐⭐⭐      |  ⭐⭐⭐⭐⭐    | ⭐⭐⭐            | ⭐⭐⭐                                   | ⭐⭐⭐⭐         |
-| Modularity             | ⭐           | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐⭐      | ⭐⭐⭐⭐        | ⭐⭐⭐            | ⭐⭐⭐                                  | ⭐⭐⭐⭐⭐       |
-| Overall cost           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐      | ⭐⭐⭐          | ⭐⭐               | ⭐                                       | ⭐                 |
-| Performance            | ⭐⭐         | ⭐⭐        | ⭐⭐⭐           | ⭐⭐⭐        | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐⭐       | ⭐⭐                                     | ⭐⭐              |
-| Reliability            | ⭐⭐⭐      | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐⭐      | ⭐⭐⭐          | ⭐⭐⭐⭐          | ⭐⭐                                     | ⭐⭐⭐⭐         |
-| Scalability            | ⭐           | ⭐           | ⭐                | ⭐⭐⭐         | ⭐⭐⭐⭐⭐     | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐                                | ⭐⭐⭐⭐⭐       |
-| Simplicity             | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐         | ⭐⭐⭐        | ⭐               | ⭐                 | ⭐                                        | ⭐                 |
-| Testability            | ⭐⭐        | ⭐⭐⭐      | ⭐⭐⭐            |⭐⭐⭐⭐       | ⭐⭐            | ⭐                 | ⭐                                        | ⭐⭐⭐⭐          |
+| Characteristic/Name    | [Ball Of Mud](ball-of-mud.md) | [Layered](layered.md)  |[Pipeline](pipeline.md)   |[Microkernel](microkernel.md)    |[Service-Based](service-based.md)|  [Event-Driven](event-driven.md)|  [Space-Based](space-based.md)    |  [Orchestration-Driven Service-Oriented](orchestration-drive-service-oriented.md)|  [Microservices](microservices.md) |
+| ---                    | ---           | ---          |---            |---                | ---             | ---              | ---                 | ---                                       | ---                |
+| Monolithic/Distributed | Monolithic    | Monolithic   | Monolithic    |Monolithic         | Distributed     | Distributed      | Distributed         | Distributed                               | Distributed        |
+| Partitioning Type      | ?             | Technical      | Domain & Technical| Domain          | Technical         | Domain & Technical | Technical                                 | Domain             |
+| Number of quanta       | 1             | 1            | 1             |1                  |1 to many        | 1 to many         | 1                  | 1                                          | One to many       |
+| Deployability          | ⭐           | ⭐           | ⭐⭐        | ⭐⭐⭐           | ⭐⭐⭐⭐      |  ⭐⭐⭐          | ⭐⭐⭐           | ⭐                                        | ⭐⭐⭐⭐         |
+| Elasticity             | ⭐           | ⭐           | ⭐           | ⭐                | ⭐⭐           | ⭐⭐⭐          | ⭐⭐⭐⭐⭐       | ⭐⭐⭐                                  | ⭐⭐⭐⭐⭐       |
+| Evolutionary           | ⭐           | ⭐           | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐         | ⭐⭐⭐⭐⭐     | ⭐⭐⭐           | ⭐                                        | ⭐⭐⭐⭐⭐       |
+| Fault Tolerance        | ⭐           | ⭐           | ⭐           | ⭐                | ⭐⭐⭐⭐      |  ⭐⭐⭐⭐⭐    | ⭐⭐⭐            | ⭐⭐⭐                                   | ⭐⭐⭐⭐         |
+| Modularity             | ⭐           | ⭐           | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐⭐      | ⭐⭐⭐⭐        | ⭐⭐⭐            | ⭐⭐⭐                                  | ⭐⭐⭐⭐⭐       |
+| Overall cost           | ⭐           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐      | ⭐⭐⭐          | ⭐⭐               | ⭐                                       | ⭐                 |
+| Performance            | ⭐           | ⭐⭐         | ⭐⭐        | ⭐⭐⭐           | ⭐⭐⭐        | ⭐⭐⭐⭐⭐      | ⭐⭐⭐⭐⭐       | ⭐⭐                                     | ⭐⭐              |
+| Reliability            | ⭐           | ⭐⭐⭐      | ⭐⭐⭐      | ⭐⭐⭐           | ⭐⭐⭐⭐      | ⭐⭐⭐          | ⭐⭐⭐⭐          | ⭐⭐                                     | ⭐⭐⭐⭐         |
+| Scalability            | ⭐           | ⭐           | ⭐           | ⭐                | ⭐⭐⭐         | ⭐⭐⭐⭐⭐     | ⭐⭐⭐⭐⭐       | ⭐⭐⭐⭐                                | ⭐⭐⭐⭐⭐       |
+| Simplicity             | ⭐           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐         | ⭐⭐⭐        | ⭐               | ⭐                 | ⭐                                        | ⭐                 |
+| Testability            | ⭐           | ⭐⭐        | ⭐⭐⭐      | ⭐⭐⭐            |⭐⭐⭐⭐       | ⭐⭐            | ⭐                 | ⭐                                        | ⭐⭐⭐⭐          |
 
 ## OThers ...
 

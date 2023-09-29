@@ -98,3 +98,60 @@ Discuss patterns or techniques which allow to gradually migrate from todays arch
         * Did something change meanwhile ? Like stakeholders ? Or pure replace.
     * When ...
     * Tips of questions and concerns
+
+# Next Chapters for main page:
+
+## 5. Concepts
+
+### Evolutionary Architecture
+
+That change is constant, is a fundamental fact for many areas of life. This is no different for software systems and software architecture. 
+
+Architecture will have to evolve, if the systems wants to survive over a long time. A system is like a biological organism, it must adapt and change to survive. Survival of the fittest is a law that also exists for organisations and the systems that support them.
+
+> Survival of the fittest... suggestes that organisms best adjusted to their environment are the most successful in surviving and reproducing.
+
+In [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/) the authors build further on the concept of Evolutionary Architectures.
+
+**As an architect, you should take this in consideration. Try to define your architecture in a way that allows and expect change over time. Business and its requirements change constantly, as the technologies and platforms that support them.**
+
+### Understanding Needs
+
+To do good architecture, one must really try to understand the **needs of all the stakeholders** involved, and **understand their priorities**. **All your architectural decisions should be guided by the this**.
+
+### Foundations
+
+#### Architectural Thinking
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+#### Modularity
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+#### Architectura Characteristics
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+#### Component Based Thinking
+
+*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
+
+### Component Principles
+
+### Component Chesion
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+### Component Coupling
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+### X is a Detail
+
+*based on [Clean Architecture](https://www.amazon.com/dp/0134494164)*
+
+- Add your thoughts on how this element is relevant in larger architectures, and about microservices , where if the service is small enough, it might be less "important". I think it's still relevant, to follow this,  but on a smaller scale. Cause it has a solid point to avoid "bleeding in" of external concepts/ideas/or such.
+
+
+### Techniques and Soft Skills
