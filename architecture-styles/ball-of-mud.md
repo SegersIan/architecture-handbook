@@ -26,3 +26,7 @@ Name originates from [Brian Foote and Joseph Yoder's 1997 paper](http://www.lapu
 | Scalability            | ⭐           | 
 | Simplicity             | ⭐           |
 | Testability            | ⭐           |
+
+## Resources
+
+* [Brian Foote and Joseph Yoder's 1997 paper](http://www.laputan.org/mud/)

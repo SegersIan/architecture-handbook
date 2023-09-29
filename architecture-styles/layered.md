@@ -70,3 +70,7 @@ When a request travels through all the layers and back up without any additional
 | Scalability       | ⭐           |
 | Simplicity        | ⭐⭐⭐⭐⭐ |
 | Testability       | ⭐⭐        |
+
+## Resources
+
+None

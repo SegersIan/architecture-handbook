@@ -1,12 +1,16 @@
 # Microservices Architecture Style
 
-## Description
-
-## Diagram 
-
 ![Microservices Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1701.png)
 
-#### Characteristics Ratings
+## Description
+
+## When To Use
+
+## When NOT To Use
+
+## Considerations
+
+## Characteristics
 
 | Characteristic    | Rating       |
 | ---               | ---          |

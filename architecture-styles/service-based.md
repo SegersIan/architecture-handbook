@@ -1,12 +1,16 @@
-# Service-Based Architecture Style
-
-## Description
-
-## Diagram
+# Architecture Style:Service-Based
 
 ![Service-Based Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1301.png)
 
-#### Characteristics Ratings
+## Description
+
+## When To Use
+
+## When NOT To Use
+
+## Considerations
+
+## Characteristics
 
 | Characteristic    | Rating       |
 | ---               | ---          |
@@ -23,3 +27,7 @@
 | Scalability       | ⭐⭐⭐           |
 | Simplicity        | ⭐⭐⭐ |
 | Testability       | ⭐⭐⭐⭐        |
+
+## Resources
+
+None

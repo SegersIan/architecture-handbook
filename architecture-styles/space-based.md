@@ -1,12 +1,16 @@
-# Space-Based Architecture Style
+# Architecture Style:Space-Based
+
+![Space-Based Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1501.png)
 
 ## Description
 
-## Diagram
- 
-![Space-Based Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1501.png)
+## When To Use
 
-## Characteristics Ratings
+## When NOT To Use
+
+## Considerations
+
+## Characteristics
 
 | Characteristic    | Rating       |
 | ---               | ---          |
@@ -23,3 +27,7 @@
 | Scalability       | ⭐⭐⭐⭐⭐           |
 | Simplicity        | ⭐ |
 | Testability       | ⭐        |
+
+## Resources
+
+None

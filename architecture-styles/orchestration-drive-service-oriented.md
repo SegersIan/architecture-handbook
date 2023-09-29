@@ -1,12 +1,16 @@
-# Orchestration-Driven Service-Oriented Architecture Style
-
-## Description
-
-## Diagram
+# Architecture Style:Orchestration-Driven Service-Oriented
 
 ![Orchestration-Driven Service-Oriented Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1601.png)
 
-## Characteristics Ratings
+## Description
+
+## When To Use
+
+## When NOT To Use
+
+## Considerations
+
+## Characteristics
 
 | Characteristic    | Rating       |
 | ---               | ---          |
@@ -23,3 +27,7 @@
 | Scalability       | ⭐⭐⭐⭐           |
 | Simplicity        | ⭐ |
 | Testability       | ⭐        |
+
+## Resources
+
+None

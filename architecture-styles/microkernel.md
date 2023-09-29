@@ -1,13 +1,16 @@
-# Microkernel Architecture Style
-
-## Description
-
-## Diagram
+# Architecture Style:Microkernel
 
 ![Microkernel Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1201.png)
 
-#### Characteristics Ratings
+## Description
 
+## When To Use
+
+## When NOT To Use
+
+## Considerations
+
+## Characteristics
 | Characteristic    | Rating       |
 | ---               | ---          |
 | Partitioning Type | Domain & Technical    |
@@ -23,3 +26,7 @@
 | Scalability       | ⭐           |
 | Simplicity        | ⭐⭐⭐⭐ |
 | Testability       | ⭐⭐⭐        |
+
+## Resources
+
+None
