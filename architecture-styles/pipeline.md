@@ -1,8 +1,14 @@
+[<< Back To Overview](./readme.md)
+
 # Architecture Style: Pipeline
 
 ![Pipeline Architecture Style Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1101.png)
 
+*Alternative names: Pipes and filters*
+
 ## Description
+
+
 
 ## When To Use
 
