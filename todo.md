@@ -67,6 +67,24 @@ have met the enemy, and he is us.” - ralph johnson
 
 * DDD - I (IAN) would label it as a data/scope modelling tool, not an "structuring" tool.
 
+### (Anti) Patterns
+
+*This section might be moved to a page of it's own, listing all (anti) patterns.
+
+* Big Ball of Mud (Anti Pattern)
+    * Absence of architecture, or absence of architecture governance (making sure the vision is followed).
+    * No real structure
+    * [Orignal Whitepaper](https://www.researchgate.net/publication/2938621_Big_Ball_of_Mud)
+* Unitary Architecture (Pattern)
+    * System lives on one piece of hardware, no integrations or such.
+    * e.g. Embedded systems
+* Client/Server (Pattern)
+    * Desktop + database server
+    * Browser + web server
+    * Three-Tier 
+* Architecture by implication (Anti Pattern)
+* Accident Architecture (Anti Pattern)
+
 
 ## Managed Evolution Notes
 
@@ -155,3 +173,5 @@ To do good architecture, one must really try to understand the **needs of all th
 
 
 ### Techniques and Soft Skills
+
+
