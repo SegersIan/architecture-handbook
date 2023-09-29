@@ -39,8 +39,8 @@ It the field of IT, architects exist at every level of a large system. The large
 
 **The architecture of any given system**, high or low level, would have the following **4 pillars** (or do well to have these 4) which guides in defining an architecture:
 
-1. The [actual|desired] **structure** of the system
-2. The [actual|desired] **characteristics** of the system.
+1. The (actual/desired) **structure** of the system
+2. The (actual/desired) **characteristics** of the system.
 3. The **architecture decisions** for the system.
 4. The **design principles** for the system.
 
