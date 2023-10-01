@@ -175,3 +175,7 @@ To do good architecture, one must really try to understand the **needs of all th
 ### Techniques and Soft Skills
 
 
+
+* BASE
+* ACID
+    * What they mean, and how they related to architectures (monolith vs distributed etc...)
