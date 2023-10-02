@@ -21,6 +21,7 @@
 
 *Note: I list only books that I have read and appreciate*
 
+* [Building Event-Driven Microservices: Leveraging Organizational Data at Scale](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
 * [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
 * [Clean Architecture](https://www.amazon.com/dp/0134494164)
 * [Domain-Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
