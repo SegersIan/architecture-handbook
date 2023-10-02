@@ -46,22 +46,24 @@ This topology has no central event mediator,  messages flow across the event pro
 * Error Handling is hard, there is no implicit monitoring if a business activity has failed, or if a failure has occured. Other event processes or not aware of a crash in a certain part of the system.
 * The ability to restart a business transaction (recoverability) is also something not supported with this topology. Requiring often manual intervention.
 
-
-
-
-
-
-
-
-
-
-
-
 #### Mediator Topology (Orchestration Pattern)
 
 This is also known as **The Orchestration Pattern**.
 
-> Used when you require control over the workflow of an event process
+> Used when you require control over the workflow of an event process. Partially addresses the shortcomings of the broker topology.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #### Comparison
 
