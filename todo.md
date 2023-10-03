@@ -179,3 +179,12 @@ To do good architecture, one must really try to understand the **needs of all th
 * BASE
 * ACID
     * What they mean, and how they related to architectures (monolith vs distributed etc...)
+
+
+
+
+* Note that your job might be Solution Archtiect, not software architect. Maybe worthy a comment or sectio
+
+
+
+* https://www.reactivemanifesto.org/ cover it somewhere

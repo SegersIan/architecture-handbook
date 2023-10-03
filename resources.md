@@ -12,6 +12,7 @@
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
+* [Reactive Manifesto](https://www.reactivemanifesto.org/)
 * [Replicated Data Consistency Explained Through Baseball](./attachments/whitepaper-data-consistency-baseball.pdf)
 * [Saga Pattern Whitepaper](./attachments/whitepaper-sagas.pdf)
 * [Enterprise Architects Join the Team (Rebecca J. Parson)](https://martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf)
