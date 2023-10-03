@@ -114,13 +114,15 @@ Near-cache is a type of hybrid model bridging in-memory data grids with a distri
         * **RR**: Random Replacement
 
 ***PUs don't synchronize data not between each other! Goes all via the Caching server. This creates inconsistencies in performance and responsiveness between PUs because each PU contains different data in the front cache. For this reason near-cache model is not advised for space-based architecture.***
-
  
 ## When To Use
 
-## When NOT To Use
+* When there is high variability in user load, and when the load is high, they all access similar data. Like a ticket sale, for a short while as tickets are released, suddenly a lot of communication must happen on how many tickets are still available, the places etc... PUs can be assigned/allocated to a specific ticket sale, or a bidding process.
+* When there is an (insane) high concurrent user volume that has to read and write similar data or the same data. Can easily deal with millions of concurrent users.
 
 ## Considerations
+
+This is a very complicated and technical style.
 
 ## Characteristics
 
