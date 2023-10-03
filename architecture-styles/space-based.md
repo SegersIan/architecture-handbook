@@ -74,7 +74,7 @@ Unique to this architecture, one can place the database on-prem and all the othe
 
 ### Replicated vs Distributed Caching
 
-Space-based architecture mostly depends on replicated caching, although distributed caching can be used as well.
+Space-based architecture mostly depends on replicated caching, although distributed caching can be used as well. Both can be also used based on the PU types. Consider leveraging based on the domain/functionality what caching strategy works best, See the *optimization* row in the table below.
 
 | Decision Criteria | Replicated Cache | Distributed Cache |
 | ---               | ---              | ---               |
@@ -102,6 +102,20 @@ This requires an external server or service for the central cache server which i
 
 ### Near-Cache Considerations
 
+[Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1514.png)
+
+Near-cache is a type of hybrid model bridging in-memory data grids with a distributed cache. 
+
+* The distributed cache is referred to as **Full backing Cache**.
+* Each in-memory data grid contained within each PU is referred to as the **front cache**.
+    * The front cache contains smaller subsets of the full backing cache, using an **eviction policy**.
+        * **MRU**: Most Recent Used
+        * **MFU**: Most Frequent Used
+        * **RR**: Random Replacement
+
+***PUs don't synchronize data not between each other! Goes all via the Caching server. This creates inconsistencies in performance and responsiveness between PUs because each PU contains different data in the front cache. For this reason near-cache model is not advised for space-based architecture.***
+
+ 
 ## When To Use
 
 ## When NOT To Use
