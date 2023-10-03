@@ -12,7 +12,7 @@ This architectural style comes from the notion that in [traditional web faced ap
 
 ### Topology
 
-Name is based on the concept of *[tuple space](https://en.wikipedia.org/wiki/Tuple_space), the technique of using multiple parallel processors communicating through shared memory.High scalability, high elasticity, and high performance are achieved by removing the central database as a synchronous constrain in the system and instead leveraging replicated in-memory data grids. Applications data is kept in-memory and replicated among all the active *processing units**. When a processing unit updates data, it asynchronously sends that data to the database, usually via messaging with persistent queues. Processing units start up and shut down dynamically as user load increased and decreases, thereby addressing variable scalability. Because there is no central database involved in the standard transactional processing of the application, the database bottleneck is removed, thus providing near-infinite scalability within the application.
+Name is based on the concept of *[tuple space](https://en.wikipedia.org/wiki/Tuple_space)*, the technique of using multiple parallel processors communicating through shared memory.High scalability, high elasticity, and high performance are achieved by removing the central database as a synchronous constrain in the system and instead leveraging replicated in-memory data grids. Applications data is kept in-memory and replicated among all the active *processing units**. When a processing unit updates data, it asynchronously sends that data to the database, usually via messaging with persistent queues. Processing units start up and shut down dynamically as user load increased and decreases, thereby addressing variable scalability. Because there is no central database involved in the standard transactional processing of the application, the database bottleneck is removed, thus providing near-infinite scalability within the application.
 
 There are **5 core architecture components**:
 1. **Processing Unit**: Containing the application code
@@ -64,9 +64,41 @@ Just like data writers and pumps, these can be scoped on arbitrary domains.
 
 ### Data Collisions
 
+See * [Fundamentals of Software Architecture: Chapter 15](https://fundamentalsofsoftwarearchitecture.com/) for detailed calculations and the variables that impact that.
+
 ### Cloud vs On-Premise Implementations
 
+[Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1511.png)
+
+Unique to this architecture, one can place the database on-prem and all the other PUs and Virtualized middleware on the cloud for scalability. This can assist in regulatory and security concerns.
+
 ### Replicated vs Distributed Caching
+
+Space-based architecture mostly depends on replicated caching, although distributed caching can be used as well.
+
+| Decision Criteria | Replicated Cache | Distributed Cache |
+| ---               | ---              | ---               |
+| Optimization      | Performance      | Consistency       |
+| Cache Size        | Small (<100 MB)  | Large (>500MB)    |
+| Type of data      | Relatively static | Highly dynamic    |
+| Update Frequency  | Relatively low   | High update rate  |
+| Fault Tolerance   | High             | Low               |
+
+#### Replicated Caching
+
+[Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1512.png)
+
+Each PU contains its own in-memory data grid that is synchronized between all processing units using the same named cache. When an update happens to that named cache in any of the PUs, other PUs are automatically updated with that information. THis is not extremely fast, but has high level of fault tolerance as there is no single point of failure.
+
+This is the default model, however, in some situations, distributed cache is more desireable.
+
+#### Distributed Caching
+
+[Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1513.png)
+
+This is used when there is high data volumes (size of cache) and high update rates to the cache data. Internal memory caches in excess of 100 MB might start to cause issues as the amount of memory used buy each PU becomes high. When these (RAM) memory issues occur, update rate of the cache data is too high, the data grid might be unable to keep up. In these situations you need distributed cache most likely.
+
+This requires an external server or service for the central cache server which is distributed underneath. Since the cache is not co-located in the PU, there might be a lower access speed.
 
 ### Near-Cache Considerations
 
@@ -96,4 +128,4 @@ Just like data writers and pumps, these can be scoped on arbitrary domains.
 
 ## Resources
 
-None
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
