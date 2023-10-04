@@ -11,11 +11,11 @@ This architectural style can be used standalone or embedded with other architect
 
 ### Request-Based & Event-Based
 Majority of processes in any architectural style are request-driven, using the request-based model. 
-In the event-based model, systems **react** to an event that happens. We are inversing the responsibility for systems to act accordingly.
+In the event-based model, systems **react** to an event that happens. We are inverting the responsibility for systems to act accordingly.
 
-If we think about it, the event-model is all around us in nature and physics. When you throw a ball against the wall, the ball moves through the air as reaction to the event of force being excercissed on the ball. 
+If we think about it, the event-model is all around us in nature and physics. When you throw a ball against the wall, the ball moves through the air as reaction to the event of force being exercised on the ball. 
 We could mistake the idea that we "tell the ball" what to do, but rather through our understanding of physics (or experience) we know that the ball will respond with flying through the air, if we put pressure on it.
-Actually, in nature there is little that is genuinly "request-based", even a "response" is a reaction to an event that indicated a "request". The philosophical part aside, the request-based model demands a synchronous interaction, event-based is intentionally asynchronous.
+Actually, in nature there is little that is genuinely "request-based", even a "response" is a reaction to an event that indicated a "request". The philosophical part aside, the request-based model demands a synchronous interaction, event-based is intentionally asynchronous.
 
 ### Topologies
 
@@ -43,7 +43,7 @@ This topology has no central event mediator,  messages flow across the event pro
 
 [See Example Flow Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1404.png)
 
-##### Challanges
+##### Challenges
 
 * No control over the overall workflow associated with the initiating event. Everything is dynamic, based on various conditions, no one in the system really knows when the entire Business activity has been completed or not.
 * Error Handling is hard, there is no implicit monitoring if a business activity has failed, or if a failure has occured. Other event processes or not aware of a crash in a certain part of the system.
@@ -68,7 +68,7 @@ It is common that there are multiple event mediators, each event mediator scoped
 
 ##### Event Mediator Types
 
-[Mediator Delegation Model](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1406.png): One advice is to use a simpel event mediator, and based on the contents of the event, it might forward this to a more complex event mediator if warranted. Therefore one must understand well the types of events being processed to choose the right type of event mediator. 
+[Mediator Delegation Model](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1406.png): One advice is to use a simple event mediator, and based on the contents of the event, it might forward this to a more complex event mediator if warranted. Therefore one must understand well the types of events being processed to choose the right type of event mediator. 
 
 * Simple Event Mediator: Simple error handling + orchestration: Apache Camel, Mule ESB, Spring Integration, or self written
 * Hard Event Mediator: Complex conditional processing and multiple dynamic paths with complex error handling: Apache ODE, Oracle BPEL (Business Process Execution Language)
@@ -82,21 +82,21 @@ It is common that there are multiple event mediators, each event mediator scoped
 * [Example of combined mediators types: Step 4](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1411.png)
 * [Example of combined mediators types: Step 5](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1412.png)
 
-##### Challanges
+##### Challenges
 
 * It is very difficult to declaratively model the dynamic processing that occurs within a complex event flow. THerefore many workflows within the mediator only handle the general processing, **a hybrid model combining mediator and broker topology is used to address the dynamic nature** of complex event processing.
 * Event processors can easily be scaled, the event meditator less so, occasionally causing bottleneck problems.
-* Event processors care not as highy decoupled compared to the broker topology.
+* Event processors care not as highly decoupled compared to the broker topology.
 * Performance is not as good due to the mediator controlling nature.
 
 #### Comparison
 
-Trade off between workflow control and error handling capability versus high performance and scalability. Performance and scalability are good in general for event-driven architcture, the broker topology does is slightly better than the mediator topology.
+Trade off between workflow control and error handling capability versus high performance and scalability. Performance and scalability are good in general for event-driven architecture, the broker topology does is slightly better than the mediator topology.
 
 |                    | Broker/Choreography | Mediator/Orchestration |
 | ---                | ---                 | ---                    |
 | **Advantages**     | Highly decoupled events processors<br>High scalability<br>High Responsiveness<br>High Performance<br>High fault tolerance |  Workflow control<br>Error handling<br>Recoverability<br>Restart capabilities<br>Better data consistency |
-| **Distadvantages** | Workflow control<br>Error handling<br>Recoverability<br>Restart capabilities<br>Data inconsistency | More coupling of event processors<br>Lower Scalability<br>Lower performance<br>Lower fault tolerance<br>Modeling complex workflows |
+| **Disadvantages** | Workflow control<br>Error handling<br>Recoverability<br>Restart capabilities<br>Data inconsistency | More coupling of event processors<br>Lower Scalability<br>Lower performance<br>Lower fault tolerance<br>Modeling complex workflows |
 
 ## When (NOT) To Use
 
@@ -137,12 +137,12 @@ A key characteristic is the asynchronous nature of event-driven architectures. W
 ### Preventing Data Loss
 
 Data loss is when a message is dropped or never makes it to its final destination. In a [typical scenario](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1416.png) there are 3 areas of potential data loss.
-* Issue 1: An Event Processir fails to get a message to the queue/event channel.
-    * Solution: Use *peristent message queues* and *synchronous send*. Also known as guaranteed delivery.
+* Issue 1: An Event Processor fails to get a message to the queue/event channel.
+    * Solution: Use *persistent message queues* and *synchronous send*. Also known as guaranteed delivery.
 * Issue 2: An Event Processor de-queues the next message and crashes before processing it.
     * Solution: Use *client acknowledgement mode* instead of *auto acknowledge mode* which dictates that the client must first acknowledge that it was received before dropping the message.
-* Issue 3: An Event Processor is unable to perist some data related to a message to a database.
-    * Solution: Use ACID properties for DB communication and *Last Participant Support (LPS)* for removing the message from the peristed queue by acknowledging that the processing has been completed.
+* Issue 3: An Event Processor is unable to persist some data related to a message to a database.
+    * Solution: Use ACID properties for DB communication and *Last Participant Support (LPS)* for removing the message from the persisted queue by acknowledging that the processing has been completed.
 
 [Solution Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1417.png)
 
@@ -154,7 +154,7 @@ Another unique characteristic of event-driven architecture style is the ability 
 
 ### Request-Reply
 
-Sometimes synchronous communication is required which requires request-reply patterns. This is accomplished with *request-reply messaging (aka psydosynchronous communication)*. Note that there 2 popular ways to implement this by using *[Correclation ID](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1420.png)* or *[temprorary queues](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1421.png)*.
+Sometimes synchronous communication is required which requires request-reply patterns. This is accomplished with *request-reply messaging (aka psydosynchronous communication)*. Note that there 2 popular ways to implement this by using *[Correlation ID](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1420.png)* or *[temporary queues](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1421.png)*.
 
 [Solution Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_1419.png)
 

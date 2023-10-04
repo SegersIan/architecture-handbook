@@ -17,7 +17,7 @@ Or more specifically for Software Systems:
 
 > System software is a set of generalized programs that manage the resources of the computer, such as the central processing unit, communication links, and peripheral devices
 
-However, as you will read further about *Evolutionary Architecture* you might understand why I personally like to keep the following definitio.:
+However, as you will read further about *Evolutionary Architecture* you might understand why I personally like to keep the following definition.:
 
 > a group of body organs that together perform one or more vital functions
 
@@ -31,7 +31,7 @@ Keep in mind, a system can exist out of smaller systems or be a part of a bigger
 
 ## 2. Domain
 
-Deciding on the "boundries" and the "scope" of your system is challenging. We call this "domain modelling", the domain being the definition of your system boundries and its scope. A "domain" refers to a system in our field, usually they're used interchangeably. A domain is a system, but not every system is a (software) domain. In software term "domain" is more popular than "system". It is common to use "system" in softwware architecure, when we talk about a technical componnent, like "the IBM Mainframe". As you might have guessed, the "IBM Mainframe" in itself can be broken down in sub systems and such.
+Deciding on the "boundaries" and the "scope" of your system is challenging. We call this "domain modelling", the domain being the definition of your system boundaries and its scope. A "domain" refers to a system in our field, usually they're used interchangeably. A domain is a system, but not every system is a (software) domain. In software term "domain" is more popular than "system". It is common to use "system" in software architecture, when we talk about a technical component, like "the IBM Mainframe". As you might have guessed, the "IBM Mainframe" in itself can be broken down in sub systems and such.
 
 ## 3. System Architecture 
 
@@ -44,7 +44,7 @@ It the field of IT, architects exist at every level of a large system. The large
 3. The **architecture decisions** for the system.
 4. The **design principles** for the system.
 
-> The structure of a system, with all of its components/sub-systems and their relations manifest in a certain set of characteristics. The Architecture decisions and design principles are intended to guide the **evolution of the system** over time while maintaining the current characteristics or working towards the desired characteristics of the system. All while keeping the implementors and maintainers of the sysem from excercissing **needles** creativity.
+> The structure of a system, with all of its components/sub-systems and their relations manifest in a certain set of characteristics. The Architecture decisions and design principles are intended to guide the **evolution of the system** over time while maintaining the current characteristics or working towards the desired characteristics of the system. All while keeping the implementors and maintainers of the system from exercising **needles** creativity.
 
 We will discuss later **Evolutionary Architecture** which is a great concept for helping to guide the **evolution of the system**.
 
@@ -54,7 +54,7 @@ Ath the time of writing, this architecture handbook focuses primarily on "Softwa
 
 Software Architecture focuses on any systems/domains defined in software. Usually these domains (I will start to use 'domain' more than system from now on) are mapped to business domains and capabilities. 
 
-Software architecture followes *the 4 pillars** of architecture (see 3.). Let's have a look how the 4 pillars are implemented for software architecture.
+Software architecture follows **the 4 pillars** of architecture (see 3.). Let's have a look how the 4 pillars are implemented for software architecture.
 
 #### 4.1. Structure of the system
 
@@ -65,23 +65,23 @@ Software architecture followes *the 4 pillars** of architecture (see 3.). Let's 
 
 #### 4.2. Characteristics of the system
 
-> Describes basically **how we want the system to behave**. See [the characteristics list](architecture-characteristics.md) for an detailed list of examples. The *desired* behaviour and other charactericis vary widely per system.
+> Describes basically **how we want the system to behave**. See [the characteristics list](architecture-characteristics.md) for an detailed list of examples. The *desired* behavior and other characteristics vary widely per system.
 
 [Characteristics Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0104.png)
 
 #### 4.3. Architecture Decisions
 
 >Describes the **rules** for how a system should be constructed. These form the **constraints of the system** and **informs the developers on what they can and cannot do**.
->Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an indivdual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It doesn not hurt to measure the amount of exceptions that are granted.
+>Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an individual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It does not hurt to measure the amount of exceptions that are granted.
 
 Example: The presentation layer is not allowed to call the database layer directly.
 
 These **Architectural decisions are about:**:
-* **Making the right trade-offs** for your system. There is no perfect architecture, so we need to be explicit and consious about which trade-offs we make. It's about **Fit For Purpose**.
+* **Making the right trade-offs** for your system. There is no perfect architecture, so we need to be explicit and conscious about which trade-offs we make. It's about **Fit For Purpose**.
     * Note that the [Software Architecture: The Hard Parts](https://architecturethehardparts.com/) books uses the following subtitle:
         > Modern Trade-Off analyses for Distributed Architectures.  
 * **Keeping your options open** of your system in the future. 
-    * Try to minimize the number of early and irreverisble decisions. What we do is "defer" as many decisions as possible. When talking to business you could compare these "deferred decisions" to "options" in the finance.
+    * Try to minimize the number of early and irreversible decisions. What we do is "defer" as many decisions as possible. When talking to business you could compare these "deferred decisions" to "options" in the finance.
     * Examples: Choosing a platform agnostic programming language, allow for horizontal scaling so the sizing decisions can be postponed (elasticity).
     * As Gregor Hohpe puts it: [Architecture is about selling options](https://architectelevator.com/architecture/architecture-options/).
 
@@ -119,12 +119,12 @@ The core responisbilities that we discuss here are relevant for all type of arch
     * You can instruct to use "reactive-based framework for web development" but not which one.
 2. Continually **analyze the architecture**
     * Analyze the current architecture and technology environment and recommend solutions for improvement.
-    * "How viable is the artchitecture from a few years ago, today? Given the changes in both business and technology"
+    * "How viable is the architecture from a few years ago, today? Given the changes in both business and technology"
     * This includes test/release environments, which allows for agility. Remind DevOps principles and practices.
 3. **Keep current with latest** technology and industry **trends**
 4. Actively **ensure compliance** with decisions
 5. **Technical breadth over technical depth**
-    * Seek aggresively experience or exposure to multiple languages, platforms, and technologies.
+    * Seek aggressively experience or exposure to multiple languages, platforms, and technologies.
 6. Have **business domain knowledge**
     * Important for good communication, you do need to align with business needs.
 7. Possess **interpersonal skills**
@@ -134,7 +134,7 @@ The core responisbilities that we discuss here are relevant for all type of arch
 
 In addition to these core expectations, there are many more and this will change as technology and scale changes.
 
-Note that (7) and (8) are cruccial for the ability of the architect to have effective impact and to execute change.
+Note that (7) and (8) are crucial for the ability of the architect to have effective impact and to execute change.
 
 ## Useful
 

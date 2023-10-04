@@ -16,7 +16,7 @@ Neither is better than the other, each answers a specific set of needs.
 The 8 Fallacies:
 1. The Network Is Reliable ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0902.png))
 2. Latency Is Zero ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0903.png))
-3. Bandwith Is Infinite ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0904.png))
+3. Bandwidth Is Infinite ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0904.png))
 4. The Network Is Secure ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0905.png))
 5. The Topology Never Changes ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0906.png))
 6. There Is Only One Administrator ([Illustration](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0907.png))
@@ -30,7 +30,7 @@ Other considerations:
 
 ## Physical units vs Logical Components
 
-A logical component is a grouping of responsibilities (namespace), the physical units refers to units of deployablility (e.g. JARs or DLLs). Physicall units can still co-exist on the same host. They don't need to be distributted over different hosts.
+A logical component is a grouping of responsibilities (namespace), the physical units refers to units of deployability (e.g. JARs or DLLs). Physical units can still co-exist on the same host. They don't need to be distributed over different hosts.
 
 ## Styles Comparison
 
