@@ -19,7 +19,7 @@ We create single-purpose services that implement a bounded context. Each service
 * Each service runs its own process, originally implying its own hardware. Virtualization, Containers and infrastructure automation made it possible to separate these much further compared to a single application server (e.g Websphere, Tomcat, ...) that struggles with multi-tenancy concerns for bigger organizations, like improper isolation between shared applications. Each services having its own process solves the issues introduced by shared application servers.
 * Microservice style would not have been realistic without trust in OSS (low cost), introduction of virtualization, containers and infrastructure automation tools.
 
-#### Granularity
+### Granularity
 
 * Finding the correct granularity for services is a core challenge. Making them too small, results often in communication (coupling) with many other services to do useful work. Some developers might take the term "microservices" as a commandment. As Martin Fowler said "**The term microservice is a label, not a description**".
 * **Guidelines** to help find appropriate boundaries:
@@ -29,7 +29,7 @@ We create single-purpose services that implement a bounded context. Each service
     * **Data Isolation**: See ["Data Isolation"](####-Data-Isolation).
 * **Iteration is key**, iteration is the only way to ensure good service design. Refine!
 
-#### Data Isolation
+### Data Isolation
 
 * Bounded contexts drive isolation, including the data. Microservices kills any coupling via shared databases or shared schemas used for integration.
 * Don't model based on the "Entity", known as the "Entity Trap", but I personally like to name it entity-driven-design. 

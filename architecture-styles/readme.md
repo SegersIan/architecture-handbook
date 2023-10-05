@@ -51,6 +51,20 @@ A logical component is a grouping of responsibilities (namespace), the physical 
 | Simplicity             | ⭐           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐         | ⭐⭐⭐        | ⭐               | ⭐                 | ⭐                                        | ⭐                 |
 | Testability            | ⭐           | ⭐⭐        | ⭐⭐⭐      | ⭐⭐⭐            |⭐⭐⭐⭐       | ⭐⭐            | ⭐                 | ⭐                                        | ⭐⭐⭐⭐          |
 
+## Choosing the appropriate style
+
+As we might have expected **IT DEPENDS** which one we choose an various factors like characteristics and which trade-off we are prepared to make. This section is some general advise.
+
+### Shifting fashion in architecture
+
+Preferred styles shift over time, driven by following factors:
+* **Observations from the past**: 
+* **Changes in the ecosystem**:
+* **New Capabilities**:
+* **Acceleration**:
+* **Domain Changes**:
+* **Technology Changes**:
+* **External Factors**:
 
 
 
