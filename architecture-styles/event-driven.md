@@ -46,7 +46,7 @@ This topology has no central event mediator,  messages flow across the event pro
 ##### Challenges
 
 * No control over the overall workflow associated with the initiating event. Everything is dynamic, based on various conditions, no one in the system really knows when the entire Business activity has been completed or not.
-* Error Handling is hard, there is no implicit monitoring if a business activity has failed, or if a failure has occured. Other event processes or not aware of a crash in a certain part of the system.
+* Error Handling is hard, there is no implicit monitoring if a business activity has failed, or if a failure has occurred. Other event processes or not aware of a crash in a certain part of the system.
 * The ability to restart a business transaction (recoverability) is also something not supported with this topology. Requiring often manual intervention.
 
 #### Mediator Topology (Orchestration Pattern)

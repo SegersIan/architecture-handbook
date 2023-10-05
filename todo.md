@@ -65,8 +65,6 @@ buildings are. It is limited by imagination, by design, by organization. In
 short, it is limited by properties of people, not by properties of the world. “We
 have met the enemy, and he is us.” - ralph johnson
 
-* DDD - I (IAN) would label it as a data/scope modelling tool, not an "structuring" tool.
-
 ### (Anti) Patterns
 
 *This section might be moved to a page of it's own, listing all (anti) patterns.
