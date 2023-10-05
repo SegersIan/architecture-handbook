@@ -7,10 +7,11 @@
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
 * [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 
-## Articles/Blog/Posts/Whitepapers
+## Articles/Blog/Posts/Whitepapers/Tools
 
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
+* [Architecture Katas](https://nealford.com/katas/)
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
 * [Replicated Data Consistency Explained Through Baseball](./attachments/whitepaper-data-consistency-baseball.pdf)

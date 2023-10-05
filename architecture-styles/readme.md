@@ -4,7 +4,6 @@ Architecture styles can be use for the architecture of a whole system, but these
 
 As per usual, you need to select the style(s) based on your needs. Remember, as an architect, you must understand your needs for the system.
 
-
 ## Monolithic vs Distributed Architectures
 
 Neither is better than the other, each answers a specific set of needs. 
@@ -51,22 +50,33 @@ A logical component is a grouping of responsibilities (namespace), the physical 
 | Simplicity             | ⭐           | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐         | ⭐⭐⭐        | ⭐               | ⭐                 | ⭐                                        | ⭐                 |
 | Testability            | ⭐           | ⭐⭐        | ⭐⭐⭐      | ⭐⭐⭐            |⭐⭐⭐⭐       | ⭐⭐            | ⭐                 | ⭐                                        | ⭐⭐⭐⭐          |
 
-## Choosing the appropriate style
+## Shifting fashion in architecture
+
+Preferred styles shift over time, driven by following factors:
+* **Observations from the past**: Experience and observations of the past usually guides architects on finding solutions to these deficiencies that they experience.
+* **Changes in the ecosystem**: These changes can remove/ease existing paint points or introduce new challenges. The introduction of Kubernetes allowed for lots of automation of automation.
+* **New Capabilities**: Usually small and hidden new capabilities that shift radically what is possible or how things can work. Containers might have seemed just a natural evolution on virtual machines, but it had an enormous impact on the industry.
+* **Acceleration**: Change is constant, but the velocity is always increasing of changes in the ecosystem. Resulting in new tools, engineering practices, with new design and capabilities.
+* **Domain Changes**: The business changes, and its domain which developers constantly adapt to. Like mergers in companies.
+* **Technology Changes**: Organizations try to follow some of the technological changes for their obvious benefits.
+* **External Factors**: Maybe a design is just perfectly fine, but the licensing might change or the sun setting of vendor products, regulation, and conformity with standards can demand changes.
+Always have an understanding of current industry trends and on how they make sense.
+
+## Decide on a style
 
 As we might have expected **IT DEPENDS** which one we choose an various factors like characteristics and which trade-off we are prepared to make. This section is some general advise.
 
-### Shifting fashion in architecture
+### 1. Factors to be comfortable with
 
-Preferred styles shift over time, driven by following factors:
-* **Observations from the past**: 
-* **Changes in the ecosystem**:
-* **New Capabilities**:
-* **Acceleration**:
-* **Domain Changes**:
-* **Technology Changes**:
-* **External Factors**:
+* **The Domain**: Understand important aspects of the domain, especially those affection operational architecture characteristics. No need to be subject experts, but have a good understanding of the major aspects.
+* **Architecture characteristics that impact structure**: Discover and clarify the architecture characteristics needed to support the domain and external factors.
+* **Data Architecture**: Data architecture is a specialization of its own. However, architects must understand the impact that data design might have on their design, particularly if the new system must interact with an older/existing data architecture.
+* **Organizational Factors**: Budgets can influence the design, or vendor selection (licenses), or plans for merger & acquisitions might desired open solutions and integration architectures.
+* **Knowledge of process, teams, and operational concerns**: Conway's Law, maturity in engineering practices, how teams are build will have an influence. A monolith is much harder with 10 squads than maybe one.
+* **Domain/Architecture isomorphism**: Some problem domains match the topology of the architectural style, or be ill-suited for given style.
 
+### 2. Determinations to be made
 
-
-
-
+* **Monolith vs Distributed**: Will a single set of architectural characteristics suffice ? Monolith will suffice. If different parts of the system needs different architectural characteristics, distributed is most likely the answer.
+* **Where should data live?**: In monolith, all data lives in one or few databases. In distributed, one must determine where data is persisted, and how it will flow. This means you must consider structure and behavior when designing an architecture. Don't be fearful of iterating. We call this also data partitioning.
+* **What communication styles? (Sync vs Async)**: Once data partitioning is determined, what are the communication styles that we prefer? Synchronous communication presents fewer design, implementation, and debugging challenge. ***Default to synchronous when possible and use asynchronous when necessary.***
