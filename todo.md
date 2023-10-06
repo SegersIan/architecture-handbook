@@ -186,3 +186,6 @@ To do good architecture, one must really try to understand the **needs of all th
 
 
 * https://www.reactivemanifesto.org/ cover it somewhere
+
+
+* emergent design and intentional architecture 
