@@ -12,7 +12,7 @@ When we talk about "A monolith" most people will be referring to the layered arc
 
 The layered approach is perfect for small, simple applications like web applications. Code is partitioned from a technical view. All code of the presentation layer goes into the presentation layer, disregarding the domain or entity it relates to.
 
-Components within the layered architecture style are organized logical horizontal layers, each layer performing a specific role within the application. The amount of layers is not fixed, but 3 or 4 tiers are most common. It is important that each boundary of each layer is respected. Each layer has a distinct responsibility and role. Following the seperation of concerns.
+Components within the layered architecture style are organized logical horizontal layers, each layer performing a specific role within the application. The amount of layers is not fixed, but 3 or 4 tiers are most common. It is important that each boundary of each layer is respected. Each layer has a distinct responsibility and role. Following the separation of concerns.
 
 ### Open/Closed Layers
 
@@ -41,12 +41,12 @@ Layers can be physically separated (separated binaries, DLLs, JARs) but don't ha
 
 * When the domain of the system is very wide in scope.
 
+## Considerations
+
 * Physical layering can exist in numerous combinations.
 * Each layer has a distinct responsibility and role. Following the separation of concerns.
 * A layer can only call the next layer underneath itself. No skipping layers. A request travels from top to bottom the response the other way up.
 * Layers of isolation, changes in a single layer should have no impact or little on the other layers.
-
-## Considerations
 
 ### Anti-Pattern: Architecture Sinkhole
 
