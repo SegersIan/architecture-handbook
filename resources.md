@@ -12,6 +12,7 @@
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Architecture Katas](https://nealford.com/katas/)
+* [How To Choose Microservice boundaries](https://www.linkedin.com/pulse/how-choose-microservices-boundaries-denis-baltor/)
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
 * [Replicated Data Consistency Explained Through Baseball](./attachments/whitepaper-data-consistency-baseball.pdf)
