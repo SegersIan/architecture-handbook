@@ -9,6 +9,16 @@ Shortlist of ideas on what to write or blog about.
         * Relations/communication/Interactions relation
         * ...
     Blog about this!
-    * Fields: Architecture, Threat Modelling, Team Topologies, DDD, The Scrum framework, ...
+    
     * Explain core concepts of systems thinking first, then how we see this in all technical fields. 
+    * How you can derive characteristics and desired characteristics of a system.
+    * Now that we understand the concepts in a system, the relations, how it works, and how to manipulate... how do we now design? How can we consciously guide the design of a system? 
+        * Draft current system
+        * Draft current characterisstics
+        * Draft desired characteristics
+        * Draft desired design
+        * Design guideliness and principles ? Link these to archetypes that we have in systems thinking.
+    * Fields: Architecture, Threat Modelling, Team Topologies, DDD, The Scrum framework, ...
     * How you can also jump over to business about this.
+    * 
+    * 
