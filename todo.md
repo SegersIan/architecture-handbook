@@ -189,3 +189,6 @@ To do good architecture, one must really try to understand the **needs of all th
 
 
 * emergent design and intentional architecture 
+
+
+* Cover distributed monolith
