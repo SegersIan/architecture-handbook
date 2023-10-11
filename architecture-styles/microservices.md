@@ -129,5 +129,6 @@ Diagrams:
 
 ## Resources
 
+* [How To Choose Microservice boundaries](https://www.linkedin.com/pulse/how-choose-microservices-boundaries-denis-baltor/)
 * [Martin Fowler on Microservices](https://martinfowler.com/microservices/)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
