@@ -21,4 +21,5 @@ Shortlist of ideas on what to write or blog about.
     * Fields: Architecture, Threat Modelling, Team Topologies, DDD, The Scrum framework, ...
     * How you can also jump over to business about this.
     * How looking at the more generic/abstract "systems Lens" and how this allows to create new "thinking frameworks" and "concepts".
+    * Coupling types ? 
     * 
