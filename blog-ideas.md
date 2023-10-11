@@ -22,4 +22,6 @@ Shortlist of ideas on what to write or blog about.
     * How you can also jump over to business about this.
     * How looking at the more generic/abstract "systems Lens" and how this allows to create new "thinking frameworks" and "concepts".
     * Coupling types ? 
-    * 
+        * Behavioral coupling - External dependencies in internal processes
+        * Temporal coupling - One entity requires other entities to be performant to fulfill it's own performance requirements
+        * Implementation coupling - Having to change multiple entities as a consequence of changing a single entity  
