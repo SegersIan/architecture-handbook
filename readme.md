@@ -93,7 +93,7 @@ These **Architectural decisions are about:**:
 
 [Architecture Decisions Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0105.png)
 
- [**Architectural Decisions in Depth**](architecture-decistions/readme.md)
+ [**Architectural Decisions in Depth**](topics/architecture-decisions.md)
 
 #### 4.4. Design Principles
 

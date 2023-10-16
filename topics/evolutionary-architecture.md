@@ -18,7 +18,7 @@ With this data to your disposal, you can observe if changes negatively or positi
 
 * ***Any mechanism***: Wide variety of tools to implement fitness functions.
 * ***Objective integrity Assessment***: Objective definitions for architecture characteristics.
-* *** some architecture characteristic or combination of architecture characteristics***: There are 2 scopes for fitness functions
+* ***some architecture characteristic or combination of architecture characteristics***: There are 2 scopes for fitness functions
     * *Atomic*: Validates a single architecture characteristic
     * *Holistic*: Validates a combination of architecture characteristics. Exercises a combination of interlocking architecture characteristics to ensure that the combined effect won't negatively affect the architecture.
 
@@ -33,7 +33,7 @@ The separation between fitness functions and unit tests provide a good scoping g
 
 Fitness functions are ideally automated, although in some occasions, manual work might be required.
 
-### When to run ?
+### When to run?
 
 Automated fitness functions certainly qualify well be a part of your continuous integration pipeline. Manual fitness functions depend on the use case an scope, but probably at some integration or user acceptance phase. Do what makes most sense to you.
 
