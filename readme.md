@@ -142,6 +142,11 @@ In addition to these core expectations, there are many more and this will change
 
 Note that (7) and (8) are crucial for the ability of the architect to have effective impact and to execute change.
 
+
+## Topics
+
+* [Evolutionary Architecture](topics/evolutionary-architecture.md)
+
 ## Nuggets Of Wisdom
 
 A [shortlist of quotes](./nuggets-of-wisdom.md) that contain some good wisdom.
