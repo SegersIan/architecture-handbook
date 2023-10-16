@@ -1,4 +1,4 @@
-# A list of Architecture Characteristics
+# Architecture Characteristics
 
 Characteristics describe our desired behavior of a system across different dimensions. it is important to understand the desired characteristics and to make an explicit commitment to them. A system must not comply or concern itself about all the possible Architecture Characteristics that we can think of, cause for each system, this will differ.
 
@@ -41,3 +41,10 @@ What is important, is that a conscious and explicit decision is made of what Arc
 * Privacy
 * Security
 * Usability
+
+## Resources
+
+* [Fundamentals of Software Architecture | Chapter 4](https://fundamentalsofsoftwarearchitecture.com/)
+* [Fundamentals of Software Architecture | Chapter 5](https://fundamentalsofsoftwarearchitecture.com/)
+* [Fundamentals of Software Architecture | Chapter 6](https://fundamentalsofsoftwarearchitecture.com/)
+* [Fundamentals of Software Architecture | Chapter 7](https://fundamentalsofsoftwarearchitecture.com/)

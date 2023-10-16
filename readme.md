@@ -97,7 +97,7 @@ These **Architectural decisions are about:**:
 
 #### 4.4. Design Principles
 
->Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guideliness are intended to "guide".
+>Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guidelines are intended to "guide".
 
 Example: "Wherever possible, leverage async communication for decoupling"
 
@@ -110,7 +110,7 @@ Example: "Wherever possible, leverage async communication for decoupling"
 
 *Architectural wisdom and ideas can very specific for their time they were documented. As technology constantly changes, many aspects regarding architecture will change along with that. An example would be the introduction of tools like Kubernetes, which made the restructuring of any software topology cheap, which allows for a more evolving topology. A decade ago, such decisions were costly, so mostly final, once they were made.*
 
-The core responisbilities that we discuss here are relevant for all type of architects (including infrastructure).
+The core responsibilities that we discuss here are relevant for all type of architects (including infrastructure).
 
 ### Core Responsibilities
 1. Make **architecture decisions**
