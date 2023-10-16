@@ -48,7 +48,7 @@ It the field of IT, architects exist at every level of a large system. The large
 
 > The structure of a system, with all of its components/sub-systems and their relations manifest in a certain set of characteristics. The Architecture decisions and design principles are intended to guide the **evolution of the system** over time while maintaining the current characteristics or working towards the desired characteristics of the system. All while keeping the implementors and maintainers of the system from exercising **needles** creativity.
 
-We will discuss later **Evolutionary Architecture** which is a great concept for helping to guide the **evolution of the system**.
+[**Evolutionary Architecture**](topics/evolutionary-architecture.md) which is a great concept for helping to guide the **evolution of the system**.
 
 Ath the time of writing, this architecture handbook focuses primarily on "Software Architecture" and touch a bit on "Enterprise Architecture".
 
