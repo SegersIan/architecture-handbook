@@ -146,7 +146,8 @@ Note that (7) and (8) are crucial for the ability of the architect to have effec
 ## Topics
 
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
-* [Evolutionary Decisions](topics/architecture-decisions.md)
+* [Architecture Decisions](topics/architecture-decisions.md)
+* [Modularity](topics/modularity.md)
 
 ## Nuggets Of Wisdom
 
