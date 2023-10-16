@@ -60,16 +60,20 @@ Software architecture follows **the 4 pillars** of architecture (see 3.). Let's 
 
 #### 4.1. Structure of the system
 
-> Refers to the [**architectural style(s)**](architecture-styles/readme.md) the system is implemented in. 
+> Refers to the architectural style(s) the system is implemented in. 
 > When we talk about an micro-service architecture, we're talking about the structure of the system, not the architecture, cause the architecture also describes the characteristics, decisions, and design principles.
 
 [Structure Of the System Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0103.png)
 
+ [**Architectural style(s) in Depth**](architecture-styles/readme.md)
+
 #### 4.2. Characteristics of the system
 
-> Describes basically **how we want the system to behave**. See [the characteristics list](architecture-characteristics.md) for an detailed list of examples. The *desired* behavior and other characteristics vary widely per system.
+> Describes basically **how we want the system to behave**. The *desired* behavior and other characteristics vary widely per system.
 
 [Characteristics Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0104.png)
+
+ [**Architectural characteristics in Depth**](architecture-characteristics/readme.md)
 
 #### 4.3. Architecture Decisions
 
@@ -87,9 +91,9 @@ These **Architectural decisions are about:**:
     * Examples: Choosing a platform agnostic programming language, allow for horizontal scaling so the sizing decisions can be postponed (elasticity).
     * As Gregor Hohpe puts it: [Architecture is about selling options](https://architectelevator.com/architecture/architecture-options/).
 
-
-
 [Architecture Decisions Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0105.png)
+
+ [**Architectural Decisions in Depth**](architecture-decistions/readme.md)
 
 #### 4.4. Design Principles
 
