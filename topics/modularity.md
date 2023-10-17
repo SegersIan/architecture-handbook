@@ -1,8 +1,6 @@
 # Modularity    
 
-
-
-Different platforms offer different reuse mechanisms for code, but all support some way of grouping related code together in *modules*. This concept of *modules* is proven slippery to define. Therefore, we will use a definition from the [Fundamentals of Software Architecture | Chapter 3](https://fundamentalsofsoftwarearchitecture.com/) book. 
+Different platforms offer different reuse mechanisms for code, but all support some way of grouping related code together in *modules*. This concept of *modules* is proven slippery to define. Therefore, we will use a definition from the [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) | Chapter 3 book. 
 
 Modularity is an organizing principle. IF an architect designs a system without paying attention to how the pieces wire together, a myriad of difficulties might be presented. Good modularity exemplifies the definition of an implicit architectural characteristic. No project features a requirement that asks the architect to ensure good modular distinction and communication, yet sustainable code bases require order and consistency.
 

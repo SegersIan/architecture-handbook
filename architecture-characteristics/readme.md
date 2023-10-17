@@ -44,7 +44,4 @@ What is important, is that a conscious and explicit decision is made of what Arc
 
 ## Resources
 
-* [Fundamentals of Software Architecture | Chapter 4](https://fundamentalsofsoftwarearchitecture.com/)
-* [Fundamentals of Software Architecture | Chapter 5](https://fundamentalsofsoftwarearchitecture.com/)
-* [Fundamentals of Software Architecture | Chapter 6](https://fundamentalsofsoftwarearchitecture.com/)
-* [Fundamentals of Software Architecture | Chapter 7](https://fundamentalsofsoftwarearchitecture.com/)
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) | Chapters 4, 5, 6, 7
