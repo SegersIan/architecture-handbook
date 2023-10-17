@@ -28,7 +28,7 @@ When people don't know why a decision was made, so it keeps getting discussed ov
 * Most common business justifications include *cost, time to market, user satisfaction, and strategic positioning*. Take in consideration what is important for your stakeholder, maybe cost is less of a concern than time to market.
 
 
-### Anti-Pattern: Email-Driven Architecture anti-pattern
+### Anti-Pattern: Email-Driven Architecture
 #### Cause
 Email is great for communicating, but is a poor document repository system.
 
