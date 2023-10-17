@@ -14,6 +14,10 @@ When it comes to restructuring the architecture, the coupling encouraged by lous
 
 Given its importance, there are a variety of language-agnostic metrics to help measure modularity. There are 3 key concepts: *cohesion, coupling, and connascence*.
 
+### NOTE!
+
+> This measuring techniques come from the structured programming field. Some of it might also apply to OO and Functional paradigms, however, these metrics are originally targeting structured code bases.
+
 ### Cohesion
 
 Refers to what extent the parts of a module should be contained within the same module. Measuring how relates parts are to each other. Ideally a cohesive module is one where all the parts should be packaged together. Attempting to divide a cohesive module would only result in increased coupling, and decreased readability.
@@ -33,9 +37,41 @@ Refers to what extent the parts of a module should be contained within the same 
 
 ### Coupling
 
+A basic measuring method would be by just measuring afferent and efferent coupling:
+* *Afferent* Coupling: Incoming connections/dependencies to a code artifact. (ingress/incoming)
+* *Efferent* Coupling: Outgoing connections/dependencies to a code artifact. (egress/outgoing)
+
+The following approach allows for a deeper evaluation than the basic afferent/efferent measurements.
+
+* **Abstractness**: The ratio of abstract artifacts (abstract classes, interfaces, ...) to concrete artifacts (implementation).
+* **Instability**: The ratio of efferent coupling to the cum of both efferent and afferent coupling.
+    * Determines the volatility of a code base. A code base that has high instability breaks more easily because of the high coupling. If a class calls to many other classes to delegate work, the calling class shows high sensitivity to breakage if one or more of the called methods change.
+* **Distance from Main Sequence**: `Distance = | Abstractness + Instability - 1 |`
+    * This is a derived metric from Abstractness and Instability.
+    * This metric imagines an ideal relationship between abstractness and instability; classes that fall near this idealized line exhibit a health mixture of these two competing concepts.
+    * [Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0303.png)
+    * There are [2 zones](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0303.png) where a code artifact can fall
+        * *Zone of uselessness*: Code that is too abstract becomes difficult to use.
+        * *Zone of pain*: Code with too much implementation and not enough abstraction becomes brittle and hard to maintain.
+ 
 ### Connascence
 
+A refinement of the afferent/efferent measures towards OO.
 
+> Two components are connascence if a change in one would require the other to be modified in order to maintain the overall correctness of the system.
+
+#### Static Connascence
+
+Source-code-level coupling, the degree to which something is coupled, either afferent or efferent:
+
+* *Connascence of Name (Con)*:
+* *Connascence of Type (CoT)*:
+* *Connascence of Meaning (CoM) or Connascence of Convention (CoC)*:
+* *Connascence of Position (CoP)*:
+* *Connascence of Algorithm (CoA)*:
+
+
+#### Dynamic Connascence
 
 ## Resources
 
