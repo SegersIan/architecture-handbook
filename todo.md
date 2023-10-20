@@ -105,3 +105,9 @@ To do good architecture, one must really try to understand the **needs of all th
 * Operational vs Anlytical data
 * Data mesh
 * Look at data intensive applications book to see 
+
+### Concurrency Models
+* What is covered in the book
+
+### 7 databases in 7 weeks
+* ANy thoughts from there
