@@ -76,6 +76,6 @@ Based on the scope you should store these ADRs appropriately. You can store them
 ## Resources
 
 * [GitHub ADR](https://adr.github.io/)
-* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) | Chapter 19
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 19
 * [ADR-Tools](https://github.com/npryce/adr-tools)
 * [ADR-Tools Blog](https://www.hascode.com/2018/05/managing-architecture-decision-records-with-adr-tools/)

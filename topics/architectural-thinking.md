@@ -49,4 +49,4 @@ A software architect ideally codes to maintain a certain level of technical dept
 
 ## Resources
 
-* [Fundamentals of Software Architecture | Chapter 2](https://fundamentalsofsoftwarearchitecture.com/)
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 2
