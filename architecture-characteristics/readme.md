@@ -72,7 +72,23 @@ However, below is a list of examples to help you get started. You can also see t
 
 ## Identifying Characteristics
 
-Chapter 5 ...
+The aforementioned list is mostly about implicit architecture characteristics, there are at least 2 more ways to uncover architecture characteristics:
+
+### Extract From Domain Concerns
+
+Listen well to domain/business stakeholders and understand their concerns. Don't mistake a single concern as one characteristic.
+
+| Domain Concern Example | Architecture Characteristics |
+| ---                    | ---                          |
+| Merges & Acquisitions  | Interoperability, Scalability, adaptability, extensibility |
+| Time To Market         | Agility, Testability, Deployability |
+| User Satisfaction      | Performance, availability, Fault tolerance, testability, deployability, agility, security |
+| Competitive Advantage  | Agility, testability, deployability, scalability, availability, fault tolerance |
+| Time and Budget        | Simplicity, feasibility |
+
+### Extract From Requirements
+
+Sometimes there are explicit requirements (e.g. min/max amount of users) or just from having a lot of domain knowledge. If you have a class registration system that is once per year used, for 24h, all students will need to use it. You probably only need to deal with a small peak, and further not worry about availability.
 
 ## Measuring Characteristics (Governance)
 
