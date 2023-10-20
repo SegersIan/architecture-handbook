@@ -70,6 +70,18 @@ However, below is a list of examples to help you get started. You can also see t
 | Security | Cross-Cutting |  Does the data need to be encrypted at-rest or in-transport ? |
 | Usability | Cross-Cutting | Level of training required for users to achieve their goals |
 
+## Identifying Characteristics
+
+Chapter 5 ...
+
+## Measuring Characteristics (Governance)
+
+Chapter 6
+
+## Scope of Characteristics
+
+Chapter 7
+
 ## Resources
 
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) | Chapters 4, 5, 6, 7
