@@ -99,3 +99,6 @@ To do good architecture, one must really try to understand the **needs of all th
 
 ## Modelling
     * Go deeper on domain modelling techniques and approaches.
+
+### Data vs Compute vs Network architecture
+* Draw the comparison with your blog on cloud services.
