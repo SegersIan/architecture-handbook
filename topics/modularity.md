@@ -8,7 +8,7 @@ Modularity is an organizing principle. IF an architect designs a system without 
 
 Modularity describes a logical grouping of related code, which could be a group of classes in a OO language or functions in a functional language. This grouping does't imply a physical separation, merely a logical one. 
 
-When it comes to restructuring the architecture, the coupling encouraged by louse partitioning becomes an impediment to breaking the monolith apart. Thus, it is useful to talk about modularity as a concept separate from the physical separation forced or implied by a particular platform. **Components** *are the physical manifestation of modules*.
+When it comes to restructuring the architecture, the coupling encouraged by louse partitioning becomes an impediment to breaking the monolith apart. Thus, it is useful to talk about modularity as a concept separate from the physical separation forced or implied by a particular platform. **Components** *are the physical manifestation of modules*. Note that component can contain one ore more modules.
 
 ## Measuring
 
@@ -62,16 +62,60 @@ A refinement of the afferent/efferent measures towards OO.
 
 #### Static Connascence
 
+This is analyzed at build/source code level.
+
 Source-code-level coupling, the degree to which something is coupled, either afferent or efferent:
 
-* *Connascence of Name (Con)*:
-* *Connascence of Type (CoT)*:
-* *Connascence of Meaning (CoM) or Connascence of Convention (CoC)*:
-* *Connascence of Position (CoP)*:
-* *Connascence of Algorithm (CoA)*:
-
+* **Connascence of Name (CoN)**: Multiple components must agree on the *name of an entity*.
+    * Example: `createUser()` and then `updatePerson()` when it's about the same entity.
+* **Connascence of Type (CoT)**: Multiple components must agree on the *type of an entity*.
+    * Example: Using the same language type for the same entity.
+* **Connascence of Meaning (CoM) or Connascence of Convention (CoC)**: Multiple components must agree on the *meaning of particular values*.
+    * Example: `int TRUE = 1; int FALSE = 0`,  imagine someone changing that around.
+* **Connascence of Position (CoP)**: Multiple entities must agree on the *order of values*.
+    * Example: `createUser(string name, string surname) vs updateUser(string surname, string name)`
+* **Connascence of Algorithm (CoA)**: Multiple components must agree on a *particular algorithm*.
+    * Example: If a certain hashing algorithm is chosen, 2 related components must use the same.
 
 #### Dynamic Connascence
+
+This is analyzed at runtime.
+
+* **Connascence of Execution (CoE)**: The order of execution of multiple components is important.
+    * Example: You must call code in certain precedence/order to work. You can't do `article.publish()` while `article.setTile()` should be called first.
+* **Connascence of Timing (CoT)**: The timing of the execution of multiple components is important.
+    * Example: Race condition challenges
+* **Connascence of Values (CoV)**: Occurs when several values relate on one another and must change together.
+    * Example: You can not change any of the coordinates of a `square` data structure without changing the other coordinates to adhere to the requirements of a square (each side must be equal, corners 90 degrees, etc...). 
+    * You can see how this can relate to "transactions" and especially in "distributed" systems. All values must change or not at all, in an (if possible) atomic approach. You try to keep redundant data in sync sort to say.
+    * **CoV is about agreeing on a value. If any part of the system decides to change the value, all other parts must be updated to stay consistent.** 
+* **Connascence of Identity (CoI)**: Occurs when several values relate on one another and must change together.
+    * Example: Sounds similar to CoV, but there is a difference. This is about the "SAME IDENTITY" that multiple components refer to. 
+    * **CoI is about agreeing on a specific instance. It's not about the value itself but about the specific identity or reference to an object/resource.**
+
+#### Connascence Properties
+
+Connascence is an analysis tool for architects and developers, some properties of Connascence help developers use it wisely.
+
+* **Strength**: The ease which one can refactor that type of coupling. One can improve the coupling characteristics of the code by refactoring towards better types of connascence.
+    * [See strength Diagram](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0305.png) that is an excellent refactoring guide. The strongest (dynamic)Connascence types are at the bottom, and you want to start your refactoring focus there and then work your way up to the more weaker ones (Static).
+* **Locality**: Proximity between the modules. Proximal code (in same module) typically has more and higher forms of connascence than more separated code (different modules).
+    * One must consider **strength** and **locality** together. Strong forms of connascence in the same module are less troublesome than between separate modules.
+* **Degree**: Size of impact, does it impact a few or many classes? A strong connascence is ok if the degree/impact is low. Like not having many components, but code bases grow...
+
+#### How to use connascence to improve modularity
+
+1. Minimize overall connascence by breaking the system unto encapsulated elements.
+2. Minimize any remaining connascence that crosses encapsulation boundaries.
+3. Maximize the connascence within encapsulation boundaries.
+
+
+## Conclusions
+
+* Coupling originates mostly from structured programming, connascence goes deeper and questions *how* things are coupled together. Naturally there [is some overlap here](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0305.png).
+* As architect you care more on ***HOW*** things modules are coupled, not the degree.
+* These metrics were designed in a time when distributed architectures were not mainstream yet, so they work well for code bases, but there are challenges on a higher level.
+* See [Architectural Characteristics](./architecture-characteristics/readme.md) on how to thing more about connascence on higher architectural level.
 
 ## Resources
 
