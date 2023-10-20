@@ -45,3 +45,4 @@ What is important, is that a conscious and explicit decision is made of what Arc
 ## Resources
 
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) | Chapters 4, 5, 6, 7
+* [Tolerance for Imperfection](https://deviq.com/principles/tolerance-for-imperfection)

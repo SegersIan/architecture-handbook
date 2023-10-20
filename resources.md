@@ -27,6 +27,7 @@
 * [Building Event-Driven Microservices: Leveraging Organizational Data at Scale](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
 * [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
 * [Clean Architecture](https://www.amazon.com/dp/0134494164)
+* [DeviIQ](https://deviq.com)
 * [Domain-Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
 * [Enterprise Integration Patterns](https://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)

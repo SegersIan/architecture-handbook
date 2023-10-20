@@ -73,14 +73,13 @@ One of the most effective ways of documenting architecture decisions. Evangelize
 
 Based on the scope you should store these ADRs appropriately. You can store them in a git repo, close to the source, if the ADRs are scoped to everything that is located in that git repo. Alternatively, on larger scopes, consider shared folders (e.g. OneDrive) or CMS's.
 
+## Exceptions
+
+There can be always a need for exceptions on any architectural decisions or rules. That is ok, this will always happen. However, you want to track and document these exceptions. See it as a "permit" to break a rule, that ideally must be explicitly approved. By documenting exceptions, one can track the *why* of the approval of the exception. If one would track the amount of exceptions, you can create more insight regarding your architectural decisions. Many exceptions can indicate that their might be issues with the existing rules/decisions. No exceptions can indicate that the rules/decisions are not relevant maybe or don't touch important subjects. As always, one would like to see a balance.
+
 ## Resources
 
 * [GitHub ADR](https://adr.github.io/)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 19
 * [ADR-Tools](https://github.com/npryce/adr-tools)
 * [ADR-Tools Blog](https://www.hascode.com/2018/05/managing-architecture-decision-records-with-adr-tools/)
-
-## TODO
-* Operational aspects of architects
-    * Record exceptions
-    * Exceptions are ok, just measure how many you make.
