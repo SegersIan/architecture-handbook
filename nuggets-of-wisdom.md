@@ -20,3 +20,13 @@
 > Note that "what is important" means that (expert) developers decide what is important, a simple webapp, the DB could be important, but for a medical imaging app, a detail.
 
 
+
+## TODO
+
+* Nuggets of wisdom list
+    * Don't split services/domains on "entity", entity driven design I call it. Cause where goes to the entity independent, or aggregate of enttities business logic?
+    * Your thoughts on the DRY principle, and using the rule of 3. You want to apply DRY for code that changes at the same time, for the same actor/end user. (e.g. a logic for a user vs admin that seems similar at first).
+    * Clean architecture book page 62
+        * v1: A module should be responsible to one, and only one, user ornstakeholder
+        * v2 (better): A module should be responsible to one, and only one, actor.
+            * Note: module can be a small as a single source file, so maybe it is not really DRY specific, but more a guide.

@@ -79,3 +79,8 @@ Based on the scope you should store these ADRs appropriately. You can store them
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 19
 * [ADR-Tools](https://github.com/npryce/adr-tools)
 * [ADR-Tools Blog](https://www.hascode.com/2018/05/managing-architecture-decision-records-with-adr-tools/)
+
+## TODO
+* Operational aspects of architects
+    * Record exceptions
+    * Exceptions are ok, just measure how many you make.
