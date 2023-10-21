@@ -92,11 +92,33 @@ Sometimes there are explicit requirements (e.g. min/max amount of users) or just
 
 ## Measuring Characteristics (Governance)
 
-Chapter 6
+Common problems around the definition of architectural characteristics:
+* They aren't physics: Many characteristics have vague meanings.
+* Wildly varying definitions: Within same organization, departments may disagree on the definition.
+* Too Composite: Many characteristics comprise many other at smaller scale (e.g. agility => modularity, deployability, testability)
+
+There are 3 types of measurements:
+* **Operational**: Many characteristics have direct measurements. However many nuanced interpretations. The average response time can be for one team good enough, for the others the 1% that take 10 times longer are relevant to care about.
+* **Structural**: Comprehensive metrics for internal code quality don't yet exists. Some metrics and common tools do allow architects to address some critical aspects of code structure, albeit along narrow dimensions. A good example is [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
+* **Process**: Some characteristics interest with software development processes. Agility may decompose into features as testability and deployability. Testability is measurable through code coverage tools.
+
+Governance is an important role of an Architect, negligence can lead to disastrous quality problems. [Fitness functions](../topics/evolutionary-architecture.md#fitness-functions) are excellent to help with this.
 
 ## Scope of Characteristics
 
-Chapter 7
+When architects talk about scalability, generally that discussion is around the scalability of the entire system. That was a safe assumption a decade ago when everything was monolithic. With the advent of new architectural styles like microservices, the scope of architecture characteristics has narrowed considerably. When evaluating many operational architecture characteristics, an architect must consider dependent components outside the code based that will impact those characteristics.
+
+In modern systems, architects define architecture characteristics at the *quantum level* rather than system level.
+
+### Architectural Quanta
+
+To successfully design, analyze, and evolve software, developers must consider all the *coupling points that could break*. To identify these coupling points, consider the architecture quantum boundaries. So what is an architecture boundary?
+
+> An independently deployable artifact with high functional cohesion and synchronous connascence.
+
+* **Independently Deployable**: Includes necessary components to function independently from other parts of the architecture. A database used by an application, is a part of the quantum, because without the database, the application wont work.
+* **High Functional Cohesion**: How well the contained code is unified in purpose. This implies that an architecture quantum does something purposeful. The [bounded context from DDD](../topics/domain-driven-design.md) is a good example of high functional cohesion.
+* **Synchronous Connascence**: Implies synchronous communication within an application context or between distributed services tha form this architecture quantum. [Connascence is a indication of modularity](../topics/modularity.md).
 
 ## Resources
 

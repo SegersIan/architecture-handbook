@@ -24,4 +24,3 @@ Developers make design decisions implicitly rather than explicitly, which can le
 ### TODO
 
 * Accident Architecture (Anti Pattern)
-* Cover distributed monolith  

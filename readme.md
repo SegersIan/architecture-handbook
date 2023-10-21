@@ -33,7 +33,7 @@ Keep in mind, a system can exist out of smaller systems or be a part of a bigger
 
 Deciding on the "boundaries" and the "scope" of your system is challenging. We call this "domain modelling", the domain being the definition of your system boundaries and its scope. A "domain" refers to a system in our field, usually they're used interchangeably. A domain is a system, but not every system is a (software) domain. In software term "domain" is more popular than "system". It is common to use "system" in software architecture, when we talk about a technical component, like "the IBM Mainframe". As you might have guessed, the "IBM Mainframe" in itself can be broken down in sub systems and such.
 
-Domain-Driven-Design (DDD) is a popular and great logic design process to identify and define domains and their boundaries. [This is the original book](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/) and [this is a small martin fowler entry](https://martinfowler.com/bliki/DomainDrivenDesign.html). When reading about DDD, look for the **bounded contexts** parts which are great for domain modelling, DDD dus more than just that though.
+[Domain-Driven-Design (DDD)](topics/domain-driven-design.md) is a popular and great logic design process to identify and define domains and their boundaries.
 
 ## 3. System Architecture 
 
@@ -98,6 +98,8 @@ These **Architectural decisions are about:**:
 #### 4.4. Design Principles
 
 >Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guidelines are intended to "guide".
+
+Design (instead of architecture) is more in the "implementation details", in the code base (e.g. [design patterns](https://deviq.com/design-patterns/design-patterns-overview)), or the actual used technology. Architecture is the structure where the design lives in. Note that the line can be grey sometimes.
 
 Example: "Wherever possible, leverage async communication for decoupling"
 

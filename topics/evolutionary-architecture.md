@@ -8,6 +8,8 @@ It only makes sense to look at your architecture as something that evolves over 
 Evolutionary architecture defines the concept of a **fitness function** to measure certain architectural characteristics over time. By collecting this data from fitness functions, one can see how architectural characteristics are affected as the architecture evolves over time.
 With this data to your disposal, you can observe if changes negatively or positively affected your architecture. This observability of your architecture allows you to react and adjust accordingly the development of your architecture in a way that desired characteristics are conserved.
 
+Fitness functions overlap many existing verification mechanisms, depending on the way they are used (as metrics, monitors, unit test libraries, chaos engineering, and so on.).
+
 [More on architectural characteristics](../architecture-characteristics/readme.md)
 
 > Remember: Change is constant, so might as well accept that and plan for it
@@ -41,6 +43,7 @@ Automated fitness functions certainly qualify well be a part of your continuous 
 
 * **Cyclic Dependencies Between Components**: Create an automated test (e.g. with jDepend) to detect any cyclic dependencies between components. 
 * **Respect Layered Architecture**: Create an automated test to detect if the set rules for your layered architecture are respected (nowhere are closed layers skipped).
+* **Distance from the main sequence**: This is characteristic regarding [modularity](../topics/modularity.md)
 
 ### Tools
 

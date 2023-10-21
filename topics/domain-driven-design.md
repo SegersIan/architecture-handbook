@@ -1,0 +1,3 @@
+# Domain Driven Design (DDD)
+
+Domain-Driven-Design (DDD) is a popular and great logic design process to identify and define domains and their boundaries. [This is the original book](https://www.oreilly.com/library/view/domain-driven-design-tackling/0321125215/) and [this is a small martin fowler entry](https://martinfowler.com/bliki/DomainDrivenDesign.html). When reading about DDD, look for the **bounded contexts** parts which are great for domain modelling, DDD dus more than just that though.

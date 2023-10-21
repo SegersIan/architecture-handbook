@@ -111,3 +111,5 @@ To do good architecture, one must really try to understand the **needs of all th
 
 ### 7 databases in 7 weeks
 * ANy thoughts from there
+
+## Architecture Katas
