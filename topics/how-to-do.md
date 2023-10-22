@@ -4,6 +4,7 @@ This is a list of examples on how certain work can be approached and executed. T
 
 ## Designing a greenfield project
 * Get requirements -> See components the process on how to define them, then characteristics, the quanta, ... then decided monolith/distrubuted based on that component thinking, etc ...
+Chapter component based thinking is a good transition for that.
 
 ## Designing a brownfield project
 * Todo ...
