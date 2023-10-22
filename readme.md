@@ -145,6 +145,7 @@ Note that (7) and (8) are crucial for the ability of the architect to have effec
 * [Components](topics/components.md)
 * [Domain-Driven-Design](topics/domain-driven-design.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
+* [How To Do...](topics/how-to-do.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)
 * [Modules](topics/modules.md)
 
