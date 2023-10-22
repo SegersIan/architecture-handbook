@@ -8,6 +8,8 @@ As per usual, you need to select the style(s) based on your needs. Remember, as 
 
 Neither is better than the other, each answers a specific set of needs. 
 
+Read about [components](../topics/components.md#choosing-between-monolithic-vs-distributed-architectures) that can assist in the thought process in identifying your components and what architectural style might be more suitable. You can't understand architectural styles without understanding [Architecture Characteristics](../architecture-characteristics/readme.md) and [components](../topics/components.md).
+
 ## Distributed Architecture Considerations
 
 [Wiki Page](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)

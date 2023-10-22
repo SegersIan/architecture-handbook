@@ -36,3 +36,4 @@
 * [The Software Architect Elevator](https://www.amazon.com/gp/product/1492077542/ref=as_li_tl)
     * [A small summary](https://martinfowler.com/articles/architect-elevator.html) covering some points of the book.
 * [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer)
+* [Team Topologies](https://teamtopologies.com/book)

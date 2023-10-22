@@ -1,4 +1,4 @@
-# Modularity    
+# Modules    
 
 Different platforms offer different reuse mechanisms for code, but all support some way of grouping related code together in *modules*. This concept of *modules* is proven slippery to define. Therefore, we will use a definition from the [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 3 book. 
 

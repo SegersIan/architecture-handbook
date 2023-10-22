@@ -20,8 +20,7 @@
 * Discuss managed evolution, but go deeper, what it solves or does. Like, IT allignment. Circle that back to the enterprise architecture and understand how the role of IT is perceived and the relation.
 * Emphasize how 'data' and *'relations/connections* impact architecture.
 * The concepts of "lenses/views" and how they can be used. Which are they, and when to use which ones?
-* Role of conways law in architecture
-    * See "Build microservices" book of sam newmann, which has "Evolutionary Architect" 
+
 * Look at managed evolution KPIs
 * Make a throrough list of fitness function examples
 * Domain Events, Event Driven Architecure, Even Sourcing...
@@ -62,13 +61,6 @@ Discuss patterns or techniques which allow to gradually migrate from todays arch
 * ...
 
 ## Others
-
-* Think of guides or methodologies for several use cases
-    * When greenfield (Define new characteristics)
-    * When replacing systems (review desire characteritics, and current once, etc...)
-        * Did something change meanwhile ? Like stakeholders ? Or pure replace.
-    * When ...
-    * Tips of questions and concerns
 
 ### Understanding Needs
 
@@ -113,3 +105,6 @@ To do good architecture, one must really try to understand the **needs of all th
 * ANy thoughts from there
 
 ## Architecture Katas
+
+## The role of patterns in architecture + a list of patterns (might be the parent placeholder for things like the SAGA.)
+

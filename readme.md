@@ -142,11 +142,11 @@ Note that (7) and (8) are crucial for the ability of the architect to have effec
 * [Anti-Patterns](topics/anti-patterns.md)
 * [Architectural Thinking](topics/architectural-thinking.md)
 * [Architecture Decisions](topics/architecture-decisions.md)
-* [Component-Based Thinking](topics/component-based-thinking.md)
+* [Components](topics/components.md)
 * [Domain-Driven-Design](topics/domain-driven-design.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)
-* [Modularity](topics/modularity.md)
+* [Modules](topics/modules.md)
 
 ## Nuggets Of Wisdom
 
