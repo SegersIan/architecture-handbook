@@ -6,9 +6,11 @@ As per usual, you need to select the style(s) based on your needs. Remember, as 
 
 ## Monolithic vs Distributed Architectures
 
-Neither is better than the other, each answers a specific set of needs. 
+Neither is better than the other, each answers a specific set of needs. The fundamental decision rests on how many [quanta](../architecture-characteristics/readme.md#architectural-quanta) the architect discovers during the design process. If the system can manage with a single quantum (in other words, one set or architecture characteristics), then a monolithic architecture offers many advantages. On the other hand, differing architecture characteristics for components requires distributed architecture to accommodate the differing architecture characteristics.
 
-Read about [components](../topics/components.md#choosing-between-monolithic-vs-distributed-architectures) that can assist in the thought process in identifying your components and what architectural style might be more suitable. You can't understand architectural styles without understanding [Architecture Characteristics](../architecture-characteristics/readme.md) and [components](../topics/components.md).
+The ability to determine a fundamental design characteristic of architecture (monolith vs distributed) early in the design process highlights one of the advantages of using the architecture quantum as a way of analyzing architecture characteristics scope and coupling.
+
+Read about [components](../topics/components.md) that can assist in the thought process in identifying your components and what architectural style might be more suitable. You can't understand architectural styles without understanding [Architecture Characteristics](../architecture-characteristics/readme.md) and [components](../topics/components.md).
 
 ## Distributed Architecture Considerations
 

@@ -97,6 +97,7 @@ To do good architecture, one must really try to understand the **needs of all th
 * Operational vs Anlytical data
 * Data mesh
 * Look at data intensive applications book to see 
+* Data vs Application architecture might be a more mainstream approach.
 
 ### Concurrency Models
 * What is covered in the book

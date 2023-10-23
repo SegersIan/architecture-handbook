@@ -6,6 +6,16 @@ This is a list of examples on how certain work can be approached and executed. T
 * Get requirements -> See components the process on how to define them, then characteristics, the quanta, ... then decided monolith/distrubuted based on that component thinking, etc ...
 Chapter component based thinking is a good transition for that.
 
+* Get requirements
+* Do first gathering of architectural characteristics
+* Decide on technical vs domain partitioning
+* Follow the component identifcation flow
+    * Includes architectural characteristics and reflection
+    * Quanta
+    * Characeristics scoped correctly
+    * Iterative process
+* Decide on the appropriate technical architecture
+
 ## Designing a brownfield project
 * Todo ...
 
