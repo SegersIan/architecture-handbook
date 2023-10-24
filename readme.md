@@ -1,141 +1,89 @@
-# The Archtecture Handbook
+# The (Software) Architect Handbook
 
 Written and compiled by Ian Segers as personal guide for his job as Solution Architect.
-In case you are reading this directly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/).
+In case you are reading this directly on [GitHub](https://github.com/SegersIan/architecture-handbook), you can read this Markdown rendered on the [GitHub Page](https://segersian.github.io/architecture-handbook/). This is a static website which gets easily cached. To make sure to have the latests contents, do a hard refresh (CTRL + SHIFT + R for chrome/brave/edge).
 
-This is a static website which gets easily cached. To make sure to have the latests contents, do a hard refresh (CTRL + SHIFT + R for windows).
+## What Is Software Architecture?
 
-## 1. Systems
+*Many definitions exists out there, but I like to inspire my definition on Systems, from the field of [Systems Thinking](topics/systems-thinking.md).*
 
-Before we dive into Software Architecture, we must talk about Systems.
+**Software architecture is everything that matters about the architecture and design of information systems. whatever that might be.** 
 
-For a System we can find a definition like:
+Before we further explain what that exactly might entail, it is important to first understand what are **systems**.
 
-> a set of things working together as parts of a mechanism or an interconnecting network; a complex whole.
+## Systems
 
-Or more specifically for Software Systems:
+> A "system" in systems thinking is a set of interconnected elements, which can be subsystems in their own right, organized within defined boundaries. These elements function cohesively to achieve a common purpose or produce specific outcomes, influenced by the system's structure and internal interactions.
 
-> System software is a set of generalized programs that manage the resources of the computer, such as the central processing unit, communication links, and peripheral devices
+[Here can find a detailed breakdown](topics/systems-thinking.md) of the definition.
 
-However, as you will read further about *Evolutionary Architecture* you might understand why I personally like to keep the following definition.:
+### A Systems Analogy
 
-> a group of body organs that together perform one or more vital functions
+A system can be as simple as a bathtub. The bathtub holds water, there is a faucet that allows to regulate inflow of water, and there is a drainage pipe that allows for outflow of water. There are interconnected elements, and they produce a specific outcome (e.g. fill up the bath tub) based on the systems's structure and internal interactions (open the faucet, close the drainage).
 
-Lastly, if we look at physics, we can also see the usage of the term:
+An example op an adjacent system would be the sewage system. The bathtub system and sewage system are inter-connected. The defined boundary of the bathtub system is the faucet, tub, and drainage pipe. The defined boundary of the sewage starts from the drainage pipe and ends at the sewage filtering station. 
 
-> The law of conservation of energy states that energy can neither be created nor destroyed - only converted from one form of energy to another. This means that a system always has the same amount of energy, unless it's added from the outside.
+The bathtub system and sewage system are both part of a larger overarching system called the water supply and sanitation system. Making the bathtub system and the sewage systems subsystems of the  water supply and sanitation system.
 
-Either way, a **System** is a concept, far more general than software/IT systems. There is a field of [Systems Thinking](https://en.wikipedia.org/wiki/Systems_thinking). If you want to read more about it, I suggest [Thinking in Systems: A Primer](https://en.wikipedia.org/wiki/Thinking_In_Systems:_A_Primer).
+Yet again, the bathtub system itself can have multiple subsystems. The faucet for example can be examined more closely, and be considered as a (sub)system in its own right again, detailing the internal workings of the faucet. 
 
-Keep in mind, a system can exist out of smaller systems or be a part of a bigger system. Usually a system has also adjacent systems. Deciding on what parts you consider to include in your "view" of the system is important and challenging.
+Notice that a system is not just about how it is structured. There is also a time aspect to this, how does the system behave over time? How does that behavior change as we interact with the system? (e.g. close the faucet, open the drainage, ...) This is what we mean with "these elements ... produce specific outcomes".
 
-## 2. Domain
+### A Software System
 
-Deciding on the "boundaries" and the "scope" of your system is challenging. We call this "domain modelling", the domain being the definition of your system boundaries and its scope. A "domain" refers to a system in our field, usually they're used interchangeably. A domain is a system, but not every system is a (software) domain. In software term "domain" is more popular than "system". It is common to use "system" in software architecture, when we talk about a technical component, like "the IBM Mainframe". As you might have guessed, the "IBM Mainframe" in itself can be broken down in sub systems and such.
+With Information Systems we can look at it in the exact same way. An organization can be seen as one large IT system - with each component in it - being a system in its own right (e.g. a webserver), producing specific outcomes and behavior. This comes with a defined boundary (e.g. all the on-prem systems of the organization). All these systems are interconnected, facilitating communication between and within (sub)systems. Data being the content that is communicated over these interconnections or lives within components.
 
-[Domain-Driven-Design (DDD)](topics/domain-driven-design.md) is a popular and great logic design process to identify and define domains and their boundaries.
+This means that one can "zoom in" on any component of an information system and look at it's internals, exposing potential another subsystem. However, for ease of reasoning about a system diagram, we don't expose the details of any subsystems, based on what the diagram tries to communicate.
 
-## 3. System Architecture 
+Information systems also have a time aspect, it's not a static snapshot, the system over time produces certain outcomes.
 
-It the field of IT, architects exist at every level of a large system. The largest system would be "the enterprise", at this level we would talk about a "Enterprise Architect". When we divide our system in smaller sub systems, we might find Domain Architects, Solution Architects, or the sub system where a lot of other systems are running on, the infrastructure architects. Infrastructure once again can be divided in small sub systems like Network Architect, datacenter Architect, Cloud Architect, and the list goes on.
+### Boundaries and Domains
 
-**The architecture of any given system**, high or low level, would have the following **4 pillars** (or do well to have these 4) which guides in defining an architecture:
+A system has defined boundaries, and that's what we do also with information systems. An information system has defined boundaries, detailed what components are part of it, some might use "scope". These boundaries or scope usually encompass a "domain". A domain is a name or term that indicates on what premise the scope or boundaries of the system are defined. This could be a business domain (e.g. Marketing) or a technical domain (e.g. Database Layer). In this handbook we refer to this as Technical and Domain partitioning, telling on how we define our boundaries of our systems(s).
 
-1. The (actual/desired) **structure** of the system
-2. The (actual/desired) **characteristics** of the system.
-3. The **architecture decisions** for the system.
-4. The **design principles** for the system.
+[Domain-Driven-Design (DDD)](topics/domain-driven-design.md) has a concept of "Bounded Context" that is meant to aid in defining your domain, which should indicate how the boundaries are defined.
 
-> The structure of a system, with all of its components/sub-systems and their relations manifest in a certain set of characteristics. The Architecture decisions and design principles are intended to guide the **evolution of the system** over time while maintaining the current characteristics or working towards the desired characteristics of the system. All while keeping the implementors and maintainers of the system from exercising **needles** creativity.
+### Some Clarifications
 
-[**Evolutionary Architecture**](topics/evolutionary-architecture.md) which is a great concept for helping to guide the **evolution of the system**.
+* Elements in Systems Thinking are Components in Software Systems.
+* Many Components in a Software Systems can be software systems in their own right.
+* Components are interconnected - meaning - they can communicate.
+* The (software) domain *usually* refers to a system's specified boundary.
+* The pattern or philosophy that a system software is structured
+* Software systems and information systems will be used interchangeably.
 
-Ath the time of writing, this architecture handbook focuses primarily on "Software Architecture" and touch a bit on "Enterprise Architecture".
+## Architecture Properties
 
-## 4. Software Architecture
+* [**Architecture Style**](architecture-styles/readme.md) is the overarching philosophy that:
+    * Guides the structuring and partitioning of the software system and its components.
+    * Guides the preferred integration (architecture) patterns between the components of the software system.
+    * Guides the preferred integration (architecture) patterns between the software system and other external software systems.
+    * Targets certain architecture characteristics.
+* [**Architecture Characteristics**](architecture-characteristics/readme.md): describes entire software system's behavior. One would aim to target a specific set of desired characteristics that accommodates your system's needs.
 
-Software Architecture focuses on any systems/domains defined in software. Usually these domains (I will start to use 'domain' more than system from now on) are mapped to business domains and capabilities. 
+## Architecture Fields
 
-Software architecture follows **the 4 pillars** of architecture (see 3.). Let's have a look how the 4 pillars are implemented for software architecture.
+* **Application Architecture** focuses on designing and deciding upon the individual components of the system.
+* **Integration Architecture** focuses on the flows and communication between these components.
+* **Data Architecture** focuses on the content residing within these components and the information that moves through the system's flows and communications.
+* [**Evolutionary Architecture**](topics/evolutionary-architecture.md) focuses on how the constant changes over time to a software system can be best handled, without eroding your architecture and desired architecture characteristics.
 
-#### 4.1. Structure of the system
+## Laws Of Architecture
 
-Refers to the architectural style(s) the system is implemented in. 
-When we talk about an micro-service architecture, we're talking about the structure of the system, not the architecture, cause the architecture also describes the characteristics, decisions, and design principles.
+[See Topic: Laws Of Software Architecture](topics/laws-of-software-architecture.md)
 
-[Structure Of the System Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0103.png)
+## Doing Architecture
 
- [**Architectural style(s) in Depth**](architecture-styles/readme.md)
-
-#### 4.2. Characteristics of the system
-
-Describes basically **how we want the system to behave**. The *desired* behavior and other characteristics vary widely per system.
-
-[Characteristics Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0104.png)
-
- [**Architectural characteristics in Depth**](architecture-characteristics/readme.md)
-
-#### 4.3. Architecture Decisions
-
-Describes the **rules** for how a system should be constructed. These form the **constraints of the system** and **informs the developers on what they can and cannot do**.
-Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an individual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It does not hurt to measure the amount of exceptions that are granted.
-
-Example: The presentation layer is not allowed to call the database layer directly.
-
-These **Architectural decisions are about:**:
-* **Making the right trade-offs** for your system. There is no perfect architecture, so we need to be explicit and conscious about which trade-offs we make. It's about **Fit For Purpose**.
-    * Note that the [Software Architecture: The Hard Parts](https://architecturethehardparts.com/) books uses the following subtitle:
-        > Modern Trade-Off analyses for Distributed Architectures.  
-* **Keeping your options open** of your system in the future. 
-    * Try to minimize the number of early and irreversible decisions. What we do is "defer" as many decisions as possible. When talking to business you could compare these "deferred decisions" to "options" in the finance.
-    * Examples: Choosing a platform agnostic programming language, allow for horizontal scaling so the sizing decisions can be postponed (elasticity).
-    * As Gregor Hohpe puts it: [Architecture is about selling options](https://architectelevator.com/architecture/architecture-options/).
-
-[Architecture Decisions Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0105.png)
-
- [**Architectural Decisions in Depth**](topics/architecture-decisions.md)
-
-#### 4.4. Design Principles
-
-Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guidelines are intended to "guide".
-
-Design (instead of architecture) is more in the "implementation details", in the code base (e.g. [design patterns](https://deviq.com/design-patterns/design-patterns-overview)), or the actual used technology. Architecture is the structure where the design lives in. Note that the line can be grey sometimes.
-
-Example: "Wherever possible, leverage async communication for decoupling"
-
-[Design Principles Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0106.png)
-
-
-## 5. What is a Software Architect?
-
-*based on [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)*
-
-*Architectural wisdom and ideas can very specific for their time they were documented. As technology constantly changes, many aspects regarding architecture will change along with that. An example would be the introduction of tools like Kubernetes, which made the restructuring of any software topology cheap, which allows for a more evolving topology. A decade ago, such decisions were costly, so mostly final, once they were made.*
-
-The core responsibilities that we discuss here are relevant for all type of architects (including infrastructure).
-
-### Core Responsibilities
-1. Make **architecture decisions**
-    * Designs and design principles must **guide technology decisions** not dictate them.
-    * You can instruct to use "reactive-based framework for web development" but not which one.
-2. Continually **analyze the architecture**
-    * Analyze the current architecture and technology environment and recommend solutions for improvement.
-    * "How viable is the architecture from a few years ago, today? Given the changes in both business and technology"
-    * This includes test/release environments, which allows for agility. Remind DevOps principles and practices.
-3. **Keep current with latest** technology and industry **trends**
-4. Actively **ensure compliance** with decisions
-5. **Technical breadth over technical depth**
-    * Seek aggressively experience or exposure to multiple languages, platforms, and technologies.
-6. Have **business domain knowledge**
-    * Important for good communication, you do need to align with business needs.
-7. Possess **interpersonal skills**
-    * Teamwork, facilitation, and leadership.
-8. Understand and **navigate politics**
-    * Must understand the political climate and be able to navigate the politics.
-
-In addition to these core expectations, there are many more and this will change as technology and scale changes.
-
-Note that (7) and (8) are crucial for the ability of the architect to have effective impact and to execute change.
+When "doing architecture" as a software architect you should:
+1. **Understand the current architecture**, which current architecture style(s) it has, and its current architecture characteristics.
+2. **Understand the future goals of the organization** and its information system(s).
+3. **Define a clear target state of the architecture**, which target architecture style(s) it should have, and its desired architecture characteristics that accommodate the future goals of the organization.
+4. **Define a roadmap** from the current to target architecture.
+5. **Govern the transition/process** from the current to the target architecture.
+    * Use [**Architectural Decisions**](topics/architecture-decisions.md) for implementation rules.
+    * Use [**Design Principles**](topics/design-principles.md) for implementation guidance.
+6. **Obtain feedback** during the transition/process **and refine** your roadmap and target architecture as you learn.
+7. **Coach and mentor people** on the transition/process journey.
 
 ## Topics
 
@@ -143,11 +91,14 @@ Note that (7) and (8) are crucial for the ability of the architect to have effec
 * [Architectural Thinking](topics/architectural-thinking.md)
 * [Architecture Decisions](topics/architecture-decisions.md)
 * [Components](topics/components.md)
+* [Conways Law](topics/conway-law.md)
 * [Domain-Driven-Design](topics/domain-driven-design.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
 * [How To Do...](topics/how-to-do.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)
 * [Modules](topics/modules.md)
+* [Software Architect Role](topics/software-architect-role.md)
+* [Systems Thinking](topics/systems-thinking.md)
 
 ## Nuggets Of Wisdom
 

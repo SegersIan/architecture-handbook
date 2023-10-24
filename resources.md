@@ -6,6 +6,7 @@
 * [https://www.developertoarchitect.com/](https://www.developertoarchitect.com/)
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
 * [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
+* [ByteByteGo](https://bytebytego.com/)
 
 ## Articles/Blog/Posts/Whitepapers/Tools
 

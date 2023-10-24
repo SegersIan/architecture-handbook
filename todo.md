@@ -1,15 +1,5 @@
 ## Topics to cover - AKA THE TODO
 * What is Software Enterprise Architecture
-* How to do Enterprise Architecture 
-    * Understand the perceived role of IT
-    * Translate the business Strategy into IT strategy
-    * Create Transparency
-    * Define the target picture
-    * Create a roadmap to get from the current to target picture
-    * Govern/Harmonize the exection of the plan
-    * Obtain process about the process and refine
-    * Coach and mentor the people on the journey/road
-    * Somewhere side track from this steps in also things like Business capabilities and such.
 * How to get "TRUST" from the engineering team, and how to measure it (doing surveys for example)
 * How to get architecture in the "AGILE" or "SAFE" ecosystem ?
 * How to get architecture adapted all together
@@ -92,7 +82,7 @@ To do good architecture, one must really try to understand the **needs of all th
 ## Modelling
     * Go deeper on domain modelling techniques and approaches.
 
-### Data vs Compute (vs Network architecture)
+### Data 
 * Draw the comparison with your blog on cloud services.
 * Operational vs Anlytical data
 * Data mesh
