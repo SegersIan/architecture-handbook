@@ -60,8 +60,8 @@ Software architecture follows **the 4 pillars** of architecture (see 3.). Let's 
 
 #### 4.1. Structure of the system
 
-> Refers to the architectural style(s) the system is implemented in. 
-> When we talk about an micro-service architecture, we're talking about the structure of the system, not the architecture, cause the architecture also describes the characteristics, decisions, and design principles.
+Refers to the architectural style(s) the system is implemented in. 
+When we talk about an micro-service architecture, we're talking about the structure of the system, not the architecture, cause the architecture also describes the characteristics, decisions, and design principles.
 
 [Structure Of the System Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0103.png)
 
@@ -69,7 +69,7 @@ Software architecture follows **the 4 pillars** of architecture (see 3.). Let's 
 
 #### 4.2. Characteristics of the system
 
-> Describes basically **how we want the system to behave**. The *desired* behavior and other characteristics vary widely per system.
+Describes basically **how we want the system to behave**. The *desired* behavior and other characteristics vary widely per system.
 
 [Characteristics Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0104.png)
 
@@ -77,8 +77,8 @@ Software architecture follows **the 4 pillars** of architecture (see 3.). Let's 
 
 #### 4.3. Architecture Decisions
 
->Describes the **rules** for how a system should be constructed. These form the **constraints of the system** and **informs the developers on what they can and cannot do**.
->Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an individual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It does not hurt to measure the amount of exceptions that are granted.
+Describes the **rules** for how a system should be constructed. These form the **constraints of the system** and **informs the developers on what they can and cannot do**.
+Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an individual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It does not hurt to measure the amount of exceptions that are granted.
 
 Example: The presentation layer is not allowed to call the database layer directly.
 
@@ -97,7 +97,7 @@ These **Architectural decisions are about:**:
 
 #### 4.4. Design Principles
 
->Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guidelines are intended to "guide".
+Describes the **guidelines** for how a system should be constructed. Instead of a hard rule, like the architecture decisions, the guidelines are intended to "guide".
 
 Design (instead of architecture) is more in the "implementation details", in the code base (e.g. [design patterns](https://deviq.com/design-patterns/design-patterns-overview)), or the actual used technology. Architecture is the structure where the design lives in. Note that the line can be grey sometimes.
 
