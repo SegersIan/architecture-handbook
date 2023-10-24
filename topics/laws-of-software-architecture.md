@@ -2,7 +2,7 @@
 
 ## First Law of Software Architecture
 
-> First Law of Software Architecture
+> Everything in software architecture is a trade-off.
 
 ## Second Law of Software Architecture
 
