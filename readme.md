@@ -100,19 +100,16 @@ When "doing architecture" as a software architect you should:
 * [Software Architect Role](topics/software-architect-role.md)
 * [Systems Thinking](topics/systems-thinking.md)
 
-## Nuggets Of Wisdom
-
-A [shortlist of quotes](./nuggets-of-wisdom.md) that contain some good wisdom.
-
 ## Useful
 
-* [Thought Leaders](thought-leaders.md)
 * [Resources](resources.md)
+* [Thought Leaders](thought-leaders.md)
+* [Nuggets Of Wisdom](./nuggets-of-wisdom.md) that contain some good wisdom.
 
 ## Copyright
 
-This handbook is based on existing materials that I have read, combined with my own experience. Due to this, some text here can be close to the words of any of the materials I've read. For that reason I do my best to be transparent and share the relevant [resources](resources.md). I don't take credit for any of the wisdom to be found here.
+This handbook is from my experience and many materials that I have read. My intention is to clarify on every topic I cover my sources that I have used, it can be in my own words, it can be sometimes copied from any of my sources. My apologies if I failed to do so, please contact me (via a PR on this GitHub Repo, great for transparency) if I did fail to do so. I obviously don't take credit for when I quote source material and you should proceed with caution if you want to reuse these.
 
 ## Todo
 
-Here you can find my [raw todo](./todo.md) for all topics that I plan to address or needs modifications.
+Here you can find my [raw todo notes](./todo.md) on all topics that I plan to address in this handbook.
