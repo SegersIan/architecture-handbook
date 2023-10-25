@@ -1,9 +1,12 @@
-Describes the **rules** for how a system should be constructed. These form the **constraints of the system** and **informs the developers on what they can and cannot do**.
-Exceptions to these rules can happen, such a exception is also called a *variance*. Based on the size of an organization, an Architecture Decision Board (ADB) or an individual architect can grant such exceptions. This is very common, as there are always exceptions to the rule. An exception is usually only for a given part of the system. It does not hurt to measure the amount of exceptions that are granted.
 
-Example: The presentation layer is not allowed to call the database layer directly.
 
-These **Architectural decisions are about:**:
+# Architecture Decisions
+
+Architecture decisions describe the **rules** for how a system should be constructed. These rules form the **constraints of the system** and **informs the developers on what they can and cannot do**.
+
+Making architecture decisions involves gathering enough relevant information, justifying the decision, documenting the decision, and effectively communicating that decision to the right stakeholder.
+
+Architectural decisions are about:
 * **Making the right trade-offs** for your system. There is no perfect architecture, so we need to be explicit and conscious about which trade-offs we make. It's about **Fit For Purpose**.
     * Note that the [Software Architecture: The Hard Parts](https://architecturethehardparts.com/) books uses the following subtitle:
         > Modern Trade-Off analyses for Distributed Architectures.  
@@ -12,11 +15,7 @@ These **Architectural decisions are about:**:
     * Examples: Choosing a platform agnostic programming language, allow for horizontal scaling so the sizing decisions can be postponed (elasticity).
     * As Gregor Hohpe puts it: [Architecture is about selling options](https://architectelevator.com/architecture/architecture-options/).
 
-[Architecture Decisions Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0105.png)
-
-# Architecture Decisions
-
-Making architecture decisions involves gathering enough relevant information, justifying the decision, documenting the decision, and effectively communicating that decision to the right stakeholder.
+[Architecture Decisions Example Image](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_0105.png)
 
 ## Architecture Decision Anti-Patterns
 
@@ -91,7 +90,10 @@ Based on the scope you should store these ADRs appropriately. You can store them
 
 ## Exceptions
 
+*An exception can be also named "a variance".*
+
 There can be always a need for exceptions on any architectural decisions or rules. That is ok, this will always happen. However, you want to track and document these exceptions. See it as a "permit" to break a rule, that ideally must be explicitly approved. By documenting exceptions, one can track the *why* of the approval of the exception. If one would track the amount of exceptions, you can create more insight regarding your architectural decisions. Many exceptions can indicate that their might be issues with the existing rules/decisions. No exceptions can indicate that the rules/decisions are not relevant maybe or don't touch important subjects. As always, one would like to see a balance.
+
 
 ## Resources
 
