@@ -1,5 +1,3 @@
-
-
 # Architecture Decisions
 
 Architecture decisions describe the **rules** for how a system should be constructed. These rules form the **constraints of the system** and **informs the developers on what they can and cannot do**.
