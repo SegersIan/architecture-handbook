@@ -82,6 +82,7 @@ When "doing architecture" as a software architect you should:
 5. **Govern the transition/process** from the current to the target architecture.
     * Use [**Architectural Decisions**](topics/architecture-decisions.md) for implementation rules.
     * Use [**Design Principles**](topics/design-principles.md) for implementation guidance.
+    * [Make Development Teams Effective](topics/make-effective-teams.md)
 6. **Obtain feedback** during the transition/process **and refine** your roadmap and target architecture as you learn.
 7. **Coach and mentor people** on the transition/process journey.
 
@@ -97,6 +98,7 @@ When "doing architecture" as a software architect you should:
 * [Diagramming and Presenting Architecture](topics/diagrams-and-presentations.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
 * [How To Do...](topics/how-to-do.md)
+* [Making Development Teams Effective](topics/make-effective-teams.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)
 * [Modules](topics/modules.md)
 * [Software Architect Role](topics/software-architect-role.md)

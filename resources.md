@@ -7,6 +7,7 @@
 * [https://martinfowler.com/architecture/](https://martinfowler.com/architecture/)
 * [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 * [ByteByteGo](https://bytebytego.com/)
+* [Checklist Manifesto](https://en.wikipedia.org/wiki/The_Checklist_Manifesto)
 
 ## Articles/Blog/Posts/Whitepapers/Tools
 
@@ -30,6 +31,7 @@
 * [Clean Architecture](https://www.amazon.com/dp/0134494164)
 * [DeviIQ](https://deviq.com)
 * [Domain-Driven Design Distilled](https://www.oreilly.com/library/view/domain-driven-design-distilled/9780134434964/)
+* [Elastic Leadership](https://www.elasticleadership.com/)
 * [Enterprise Integration Patterns](https://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
 * [Managed Evolution](https://link.springer.com/book/10.1007/978-3-642-01633-2)
