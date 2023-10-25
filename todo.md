@@ -102,3 +102,7 @@ To do good architecture, one must really try to understand the **needs of all th
 ## Secure By Design
 
 ## Privacy By Design
+
+## Technology Radar
+
+## Application Radar
