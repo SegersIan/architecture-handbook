@@ -99,3 +99,6 @@ To do good architecture, one must really try to understand the **needs of all th
 
 ## The role of patterns in architecture + a list of patterns (might be the parent placeholder for things like the SAGA.)
 
+## Secure By Design
+
+## Privacy By Design

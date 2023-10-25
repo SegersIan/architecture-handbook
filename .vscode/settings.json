@@ -4,6 +4,7 @@
         "cyclomatic",
         "datacenter",
         "frontends",
+        "hyperscaler",
         "LCOM",
         "Microkernel",
         "nonscalable",

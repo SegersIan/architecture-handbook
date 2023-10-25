@@ -14,6 +14,7 @@ The core responsibilities that we discuss here are relevant for all type of arch
     * Analyze the current architecture and technology environment and recommend solutions for improvement.
     * "How viable is the architecture from a few years ago, today? Given the changes in both business and technology"
     * This includes test/release environments, which allows for agility. Remind DevOps principles and practices.
+    * Example: Potentially do periodic [Risk Assessments](architecure-risk.md)
 3. **Keep current with latest** technology and industry **trends**
 4. Actively **ensure compliance** with decisions
 5. **Technical breadth over technical depth**

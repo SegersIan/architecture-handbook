@@ -90,6 +90,7 @@ When "doing architecture" as a software architect you should:
 * [Anti-Patterns](topics/anti-patterns.md)
 * [Architectural Thinking](topics/architectural-thinking.md)
 * [Architecture Decisions](topics/architecture-decisions.md)
+* [Architecture Risk](topics/architecture-risk.md)
 * [Components](topics/components.md)
 * [Conways Law](topics/conway-law.md)
 * [Domain-Driven-Design](topics/domain-driven-design.md)
