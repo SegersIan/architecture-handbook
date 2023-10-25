@@ -103,8 +103,6 @@ Once all post-its in place, the collaborative part on gaining consensus in terms
 
 Now risks must be addressed, some will be mitigated, others might not, see [Addressing Risk](#addressing-risk) about what options exist. Key (business) stakeholders should be involved on deciding how risks are addressed as they are usually best positioned to decide on accepting risk or accepting costs to mitigate a risk.
 
-## Agile Story Risk Analysis
-
 ## Example: Risk Storming
 
 ## Example: Complete Risk Assessment Table
@@ -117,5 +115,5 @@ Now risks must be addressed, some will be mitigated, others might not, see [Addr
 
 ## Resources
 
-* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 20
+* [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 20 - Contains Risk Story Examples
 * [ISO 27001: Information Security](https://www.iso.org/standard/27001)
