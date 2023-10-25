@@ -99,6 +99,7 @@ When "doing architecture" as a software architect you should:
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
 * [How To Do...](topics/how-to-do.md)
 * [Making Development Teams Effective](topics/make-effective-teams.md)
+* [Negotiation and Leadership Skill](topics/negotiation-and-leadership-skills.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)
 * [Modules](topics/modules.md)
 * [Software Architect Role](topics/software-architect-role.md)
