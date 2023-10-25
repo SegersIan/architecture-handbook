@@ -22,7 +22,8 @@
 > There are no wrong answers in architecture, only expensive ones
 * Source: [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 5, p74
 
-
+> Developers are drawn to complexity like months to a flame, frequently with the same result.
+* Neal Ford
 
 ## TODO
 

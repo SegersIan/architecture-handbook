@@ -51,11 +51,59 @@ Don't leverage your title as architect to tell others what to do. Work with them
 
 ## The Software Architect as a Leader
 
-todo...
+50% about being an effective software architect is having good people skills, facilitation skills, and leadership skills. Here we cover some leadership techniques that you as an architect can leverage.
+
+### The 4 C's of Architecture
+Developers and architects love complexity. Developers are drawn to complexity like months to a flame, frequently with the same result. We have **essential complexity** (we have a hard problem), and we have **accidental complexity** (we have made a problem hard).
+
+To avoid **accidental complexity** there is the 4 C's of architecture:
+* **Communication**
+* **Collaboration**
+* **Conciseness**
+* **Clarity**
+
+These 4 factors work together to create an effective collaborator and communicator.
+
+### Be Pragmatic, Yet Visionary
+
+#### Visionary
+> Thinking about or planning the future with imagination or wisdom.
+> Being a visionary means applying strategic thinking to a problem.
+
+#### Pragmatic
+> Dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.
+
+Being pragmatic is taking following factors and constraints in account when creating a solution:
+* Budget constraints and other cost-based factors.
+* Tome constraints and other time-based factors.
+* Skill set and skill level of the development team.
+* Trade-offs and implications associated with an architecture decision
+* Technical limitations of a proposed architectural design or solution
+
+#### Putting them together
+Find an appropriate balance between being pragmatic while still applying imagination and wisdom to solving problems. Business stakeholders appreciate visionary solutions that fit within a set of constraints, and developers will appreciate having a practical (rather than theoretical solution to implement).
+
+### Leading Teams By Example
+Lead through example, not by title. This is the most efficient way to gather respect from others. Don't tell what and how it must be, ask questions, ask "what do you think of...", "have you considered", ... In coaching you help others find the questions, you don't tell them the solution.
+
+Use people their names when you talk to them, it bonds and is more personal.
 
 ## Integrating with the Development Team
 
-todo...
+### Meetings
+Key of being an effective software architect is making more time for the development team, this means controlling meetings.
+
+* **Imposed Meetings (invited to a meeting)**:
+    * Many invites are simply to keep you in the loop on information discussed, meeting notes are for that.
+    * Ask for a meeting agenda ahead of time to help qualify if you are really needed at the meeting or not.
+* **Imposes Meetings (you call the meeting)**
+    * Keep to absolute minimum, especially with developers, respect their time and give them blocks of uninterrupted focus.
+    * Often emails are enough to communicate.
+
+### Others
+
+* Sit with development teams physically.
+* Block time to converse with the development teams.
 
 ## Resources
 
