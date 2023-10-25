@@ -94,6 +94,7 @@ When "doing architecture" as a software architect you should:
 * [Components](topics/components.md)
 * [Conways Law](topics/conway-law.md)
 * [Domain-Driven-Design](topics/domain-driven-design.md)
+* [Diagramming and Presenting Architecture](topics/diagrams-and-presentations.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
 * [How To Do...](topics/how-to-do.md)
 * [Laws Of Software Architecture](topics/laws-of-software-architecture.md)

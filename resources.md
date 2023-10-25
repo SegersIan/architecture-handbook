@@ -33,6 +33,7 @@
 * [Enterprise Integration Patterns](https://www.amazon.com/o/asin/0321200683/ref=nosim/enterpriseint-20)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
 * [Managed Evolution](https://link.springer.com/book/10.1007/978-3-642-01633-2)
+* [Presentation Patterns: Techniques of crafting better presentations](https://presentationpatterns.com/)
 * [Software Architecture: The Hard Parts](https://architecturethehardparts.com/)
 * [The Software Architect Elevator](https://www.amazon.com/gp/product/1492077542/ref=as_li_tl)
     * [A small summary](https://martinfowler.com/articles/architect-elevator.html) covering some points of the book.
