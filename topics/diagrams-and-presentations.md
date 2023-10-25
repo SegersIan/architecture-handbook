@@ -49,7 +49,7 @@ When modelling, build your own style when creating diagrams and feel free to bor
 
 ## Presenting
 
-
+We will cover here a few interesting points, but the [Presentation Patterns](https://presentationpatterns.com/) website and book
 
 
 ## Resources
