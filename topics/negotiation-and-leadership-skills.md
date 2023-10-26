@@ -25,6 +25,9 @@ Costs can be a deal breaker. You might need to hone your story and understanding
 * **TIP: Leverage the "divide and conquer" rule to qualify demands or requirements**
     * Break down the demands or requirements, or consider adjusting scope.
     * Maybe the 8 nines are only relevant for a part of the system.
+* **TIP: Prioritize strategically**
+    * Stakeholders can "demand" certain features or functionality, or a solution to a problem that shouldn't exist in the first place. You can consider strategically focussing on the core of a problem, solve that, and then circle back to see if the need for given feature/requirement exists.
+    * Example: Business stakeholders want a UI to change the behaviors/parameters of an automated cost approval. You can then focus first on designing and better analyzing the actual automation logic. When that is done (and maybe even delivered), you can circle back to ask, do you still need this UI? They might realize they don't need it at all. A way to deal with this is to plan the UI component later on the roadmap, so you can then gather feedback to see if if the concerns are still valid. After all, this is what being agile is about.
 
 ### Negotiating with Other Architects
 Between architects the seniority can be in the way (ego), competitiveness, too argumentive, and could easily get personal. Some tips to deal with such situations.
