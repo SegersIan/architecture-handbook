@@ -52,8 +52,27 @@ Automated fitness functions certainly qualify well be a part of your continuous 
 * [NetArchTest](https://github.com/BenMorris/NetArchTest)
 * [SonarQube](https://www.sonarsource.com/)
 
+## Architectural Coupling
+
+Todo...
+
+## Evolutionary Data
+
+Todo...
+
+## Building Evolvable Architectures
+
+Todo...
+
+## Pitfalls and Anti-Patterns
+
+Todo...
+
+## In Practice
+
+Todo...
 
 ## Resources
 
-* [Building Evolutionary Architectures](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
+* [Building Evolutionary Architectures: Support Constant Change](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
 * [Software Architecture: The Hard Parts](https://architecturethehardparts.com/)
