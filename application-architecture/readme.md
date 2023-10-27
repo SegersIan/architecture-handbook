@@ -1,6 +1,6 @@
 # Application Architecture
 
-## Todo
+## Ideas
 
 Introduction to Application Architecture:
 
