@@ -63,7 +63,7 @@ A system has defined boundaries, and that's what we do also with information sys
 
 ## Architecture Fields
 
-* **Application Architecture** focuses on designing and deciding upon the individual components of the system.
+* [**Application Architecture**](application-architecture/readme.md) focuses on designing and deciding upon the individual components of the system.
 * [**Integration Architecture**](integration-architecture/readme.md) focuses on the flows and communication between these components.
 * [**Data Architecture**](data-architecture/readme.md) focuses on the content residing within these components and the information that moves through the system's flows and communications.
 * [**Evolutionary Architecture**](topics/evolutionary-architecture.md) focuses on how the constant changes over time to a software system can be best handled, without eroding your architecture and desired architecture characteristics.
