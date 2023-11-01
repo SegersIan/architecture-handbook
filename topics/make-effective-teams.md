@@ -52,14 +52,15 @@ To be an effective architect, knowing the right level of control to exert on a g
 For each factor determine if it needs either less control (-20) also known as armchair architect, or more control (+20) also known as a control freak. Take the sum of all factors. The min value of the sum is `-100` (hardcore armchair) and the max sum is `+100` (hardcore control freak). Based on the sum you know if you need to be take a control freak (`>0`) or armchair role (`<0`) on a scale of 0 to 100.
 
 ### Example
-| Factor | Value | Rating | Desired Role/Personality |
-| ---    | ---   | ---    | ---         |
-| **Team Familiarity** | New team members | +20 | Control Freak |
-| **Team Size**  | Small (4 members) | -20 | Armchair |
-| **Overall Experience** | All experienced | -20 | Armchair |
-| **Project Complexity** | Relatively Simple | -20 | Armchair |
-| **Project Duration** | 2 months | -20 | Armchair |
-| **Accumulated score** | | **-60** | **Armchair** |
+
+| Factor                 | Value             | Rating  | Desired Role/Personality |
+| ---                    | ---               | ---     | ---                      |
+| **Team Familiarity**   | New team members  | +20     | Control Freak            |
+| **Team Size**          | Small (4 members) | -20     | Armchair                 |
+| **Overall Experience** | All experienced   | -20     | Armchair                 |
+| **Project Complexity** | Relatively Simple | -20     | Armchair                 |
+| **Project Duration**   | 2 months          | -20     | Armchair                 |
+| **Accumulated score**  |                   | **-60** | **Armchair**             |
 
 Obviously this is not an exact science, but rather a tool that just helps you guide the decision process.
 
