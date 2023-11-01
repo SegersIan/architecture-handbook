@@ -8,6 +8,7 @@
 * [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
 * [ByteByteGo](https://bytebytego.com/)
 * [Checklist Manifesto](https://en.wikipedia.org/wiki/The_Checklist_Manifesto)
+* [Platform Engineering Maturity Model](https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/)
 
 ## Articles/Blog/Posts/Whitepapers/Tools
 
