@@ -59,7 +59,7 @@ For each factor determine if it needs either less control (-20) also known as ar
 | **Overall Experience** | All experienced | -20 | Armchair |
 | **Project Complexity** | Relatively Simple | -20 | Armchair |
 | **Project Duration** | 2 months | -20 | Armchair |
-| **Accumulated score** | | **-60** | **Armchair**
+| **Accumulated score** | | **-60** | **Armchair** |
 
 Obviously this is not an exact science, but rather a tool that just helps you guide the decision process.
 
