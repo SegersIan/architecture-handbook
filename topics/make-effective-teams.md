@@ -38,6 +38,7 @@ To be an effective architect, knowing the right level of control to exert on a g
 * **Team Size**:
     * Smaller teams (4 or less), less control.
     * Bigger teams (12 or more), more control.
+    * Note: Think of [Dunbar's Number](https://en.wikipedia.org/wiki/Dunbar%27s_number)
 * **Overall Experience** in their career (junior/senior) or business domain
     * Few Juniors or familiar to business domain, less control (architect acts more as facilitator).
     * Many Juniors or new to business domain, more control (architect acts more as mentor).
@@ -92,5 +93,6 @@ A few example checklist that are proven to work:
 ## Resources
 
 * [Checklist Manifesto](https://en.wikipedia.org/wiki/The_Checklist_Manifesto)
+* [Dunbar's Number](https://en.wikipedia.org/wiki/Dunbar%27s_number)
 * [Elastic Leadership](https://www.elasticleadership.com/)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/) - Chapter 22
