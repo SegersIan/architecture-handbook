@@ -22,7 +22,7 @@
 * [Saga Pattern Whitepaper](./attachments/whitepaper-sagas.pdf)
 * [Enterprise Architects Join the Team (Rebecca J. Parson)](https://martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf)
 * [EA in the Lean Enterprise](https://martinfowler.com/articles/ea-in-lean-enterprise.html)
-
+* [Serverless and Clean Architecture](https://blog.serverlessadvocate.com/serverless-clean-architecture-code-with-domain-driven-design-852796846d28)
 ## Recommended Books
 
 *Note: I list only books that I have read and appreciate*
