@@ -97,6 +97,7 @@ When "doing architecture" as a software architect you should:
 * [Domain-Driven-Design](topics/domain-driven-design.md)
 * [Diagramming and Presenting Architecture](topics/diagrams-and-presentations.md)
 * [Evolutionary Architecture](topics/evolutionary-architecture.md)
+* [Feature Toggles](topics/feature-toggles.md)
 * [How To Do...](topics/how-to-do.md)
 * [Making Development Teams Effective](topics/make-effective-teams.md)
 * [Negotiation and Leadership Skill](topics/negotiation-and-leadership-skills.md)
