@@ -72,6 +72,10 @@ Todo...
 
 Todo...
 
+## Todo...
+
+...mention that by doing the right decoupling and layers within a component or overal architecture, it allows to change things over time with a limited blast radius (e.g. swap out the database).
+
 ## Resources
 
 * [Building Evolutionary Architectures: Support Constant Change](https://www.oreilly.com/library/view/building-evolutionary-architectures/9781491986356/)
