@@ -6,6 +6,14 @@ These are not necessarily architecture domain specific, but they allow for a smo
 
 The following part is basically a summary of this awesome [Martin Fowler Entry by Pete Hodgson](https://martinfowler.com/articles/feature-toggles.html).
 
+## Why Use?
+
+* **Code Branch Management**: By shipping new code to production, hidden under a toggle, you can limit the amount of long-lived branches. Also known as *dark deployments*.
+* **Test In Production**: Test features in production with a limited set of users. Allowing for A/B testing or canary releases.
+* **Flighting**: Incremental roll out of new functionality.
+* **Kill Switch**: Turn of certain functionality without redeploying, like a circuit breaker. When the load is to high, you can switch off certain features that are resource intensive (e.g. a recommendation service). 
+
+
 ## Categories
 
 It can be tempting to lump all feature toggles into the same bucket, but this is a dangerous path. The design forces at play for different categories of toggles are quite different and managing them all in the same way can lead to pain down the road. It can be tempting to lump all feature toggles into the same bucket, but this is a dangerous path. The design forces at play for different categories of toggles are quite different and managing them all in the same way can lead to pain down the road.
@@ -73,13 +81,21 @@ While feature toggling is absolutely a helpful technique it does also bring addi
 Governance can be defined as the establishment of policies around the how/what/why/when of your feature flag implementation.
 
 * **Limit Feature Flag Lifetimes to Minimize Technical Debt**: Based on their category/type, their lifecycle should be short or can be longer, make sure to follow this up.
-* **Defining Access Controls for Flags**: Make sure that ignorant or unaware developers can flip the wrong switches.
+* **Defining Access Controls for Flags**: Make sure that ignorant or unaware developers can flip the wrong switches. In addition, you might introduce some "2-step" verification, so another developer must approve your change of the feature toggle. This is more applicable in highly regulated industries.
 * **Define, Document and Communicate Ownership Model**: Crisp ownership over who implements, rolls out, and maintains each flag must be absolutely clear. Some examples:
     * Most Common: The dev team owns implementation and maintenance; product team owns communication and the controls of the rollout.
     * Operational Flags acting as circuit breakers: DevOps or SRE may own the maintenance and communication.
+* **Use TAGS if supported**: Tags are in the cloud world excellent metadata tools to tag any resources (like a feature toggle) with any arbitrary metadata that can help with the governance. E.g. The Owner, the category, description, maybe any dependencies.
+* **Visibility**: We want visibility of feature flags, their state, and if possible, their interdependencies, their category, and their lifetime. Ways to do this:
+    * Dedicated feature flag dashboard
+    * Feature Flag dashboard integrated with your continuous delivery (CD).
+* **Audibility**: The ability to audit the feature flags, when they existed and what their values were over time, who made these modifications, and who might have approved these modifications. Very useful to troubleshoot issues.
+* **Policy As Code**: Leverage Policy As Code if available for your Feature Flag platform.
 
 ## Resources
 
 * [Martin Fowler Entry by Pete Hodgson](https://martinfowler.com/articles/feature-toggles.html)
 * [A feature flag horror story](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/)
 * [Optimizely: Feature Flag Governance](https://www.optimizely.com/insights/blog/feature-flag-types-governance-optimizely/)
+* [Azure App Configuration: Feature Management](https://learn.microsoft.com/en-us/azure/azure-app-configuration/concept-feature-management)
+* [Feature Flags & Ephemeral Environments](https://www.qovery.com/blog/feature-flags-management-with-ephemeral-environments)
