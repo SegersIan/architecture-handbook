@@ -68,7 +68,18 @@ While feature toggling is absolutely a helpful technique it does also bring addi
         * E.g. a Release Toggle which controls whether to use a new piece of caching infrastructure in front of a third-party API. 
 * Managing the Carrying cost of Featue Toggles: Savvy teams view their Feature Toggles as inventory which comes with a carrying cost, and work to keep that inventory as low as possible
 
+## Governance
+
+Governance can be defined as the establishment of policies around the how/what/why/when of your feature flag implementation.
+
+* **Limit Feature Flag Lifetimes to Minimize Technical Debt**: Based on their category/type, their lifecycle should be short or can be longer, make sure to follow this up.
+* **Defining Access Controls for Flags**: Make sure that ignorant or unaware developers can flip the wrong switches.
+* **Define, Document and Communicate Ownership Model**: Crisp ownership over who implements, rolls out, and maintains each flag must be absolutely clear. Some examples:
+    * Most Common: The dev team owns implementation and maintenance; product team owns communication and the controls of the rollout.
+    * Operational Flags acting as circuit breakers: DevOps or SRE may own the maintenance and communication.
+
 ## Resources
 
 * [Martin Fowler Entry by Pete Hodgson](https://martinfowler.com/articles/feature-toggles.html)
-
+* [A feature flag horror story](https://dougseven.com/2014/04/17/knightmare-a-devops-cautionary-tale/)
+* [Optimizely: Feature Flag Governance](https://www.optimizely.com/insights/blog/feature-flag-types-governance-optimizely/)
