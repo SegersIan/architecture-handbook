@@ -89,7 +89,7 @@ Governance can be defined as the establishment of policies around the how/what/w
 * **Visibility**: We want visibility of feature flags, their state, and if possible, their interdependencies, their category, and their lifetime. Ways to do this:
     * Dedicated feature flag dashboard
     * Feature Flag dashboard integrated with your continuous delivery (CD).
-* **Audibility**: The ability to audit the feature flags, when they existed and what their values were over time, who made these modifications, and who might have approved these modifications. Very useful to troubleshoot issues.
+* **Auditability**: The ability to audit the feature flags, when they existed and what their values were over time, who made these modifications, and who might have approved these modifications. Very useful to troubleshoot issues.
 * **Policy As Code**: Leverage Policy As Code if available for your Feature Flag platform.
 
 ## Resources
