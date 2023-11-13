@@ -15,6 +15,7 @@
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Architecture Katas](https://nealford.com/katas/)
+* [Conway Law: Whitepaper](http://www.melconway.com/Home/Committees_Paper.html)
 * [How To Choose Microservice boundaries](https://www.linkedin.com/pulse/how-choose-microservices-boundaries-denis-baltor/)
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
