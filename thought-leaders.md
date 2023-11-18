@@ -48,6 +48,12 @@ Author of many books and mostly known for clean code and design principles. Howe
 
 Author of [books](https://samnewman.io/books/) like [Building Microservices](https://samnewman.io/books/building_microservices/) and [Monolith To Microservices](https://samnewman.io/books/monolith-to-microservices/).
 
+## Susanne Kaiser
+
+* Website [SusanneKaiser.net](https://www.susannekaiser.net/)
+
+Does many [architecture talks](https://www.susannekaiser.net/#conferences).
+
 ## Vaughn Vernon
 
 * Website: [vaughnvernon.com](https://vaughnvernon.com/)

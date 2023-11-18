@@ -13,6 +13,10 @@ Todo...
 ## Reverse Conway
 Todo...
 
+## Extra
+
+Todo... Notice how Conway Law, Team Topologies, Organization, all are systems, and architecture is about systems, so it only makes sense that we can draw parallels in all of it.
+
 
 ## Resources
 
