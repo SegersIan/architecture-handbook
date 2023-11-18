@@ -25,6 +25,12 @@
 > Developers are drawn to complexity like months to a flame, frequently with the same result.
 * Neal Ford
 
+> Since hindsight no longer leads to foresight after a shift in context, a corresponding change in management style may be called for.
+* [HBR - A leaders framework for decision making](https://hbr.org/2007/11/a-leaders-framework-for-decision-making)
+
+> Conway's law suggest major gains from designing software architecture and team interactions together, since they are similar forces.
+* Source: [Team Topologies Book](https://teamtopologies.com/book)
+
 ## TODO
 
 * Nuggets of wisdom list
