@@ -108,3 +108,30 @@ To do good architecture, one must really try to understand the **needs of all th
 ## Application Radar
 
 ## Talk about emergent design, usually design emerges from the path of least resistance (technically or from organization, like, which team had the least bandwith or knows the stakeholder best?, they get to implement features). Also identify what other "forces" impact systems or emergent design more specific.
+
+ChatGPT input:
+
+
+When discussing emergent design or architecture in IT systems, especially in the absence of intentional design, several forces or "laws" akin to the law of the "path of least resistance" can be observed. These forces collectively influence the system's evolution and characteristics:
+
+1. **Conway's Law**: This principle states that system designs are constrained to mimic the communication structures of the organization that creates them. In other words, the system's architecture will mirror the organizational structure.
+
+2. **Accidental Complexity**: This refers to complexity that arises from the chosen tools, languages, or approaches rather than from the inherent complexity of the system itself. Over time, this accidental complexity can shape the system in unforeseen ways.
+
+3. **Technical Debt**: As shortcuts are taken or temporary solutions are implemented, technical debt accumulates. This debt can guide future development choices, often leading to more complex and less optimal solutions.
+
+4. **Survivorship Bias**: The systems or components that endure are often those that are good enough, not necessarily the best. This bias can guide the evolution of a system based on what works adequately under certain conditions, rather than what might be optimal in a different context.
+
+5. **Erosion of Design**: Over time, the original design of a system can erode due to multiple incremental changes, leading to a structure that no longer resembles the intended design. This erosion shapes the emergent design.
+
+6. **Resource Limitation**: The availability of resources (time, budget, skills) heavily influences system design. Constraints in these areas can lead to simpler, more pragmatic solutions.
+
+7. **Feedback Loops**: The responses and feedback from a system's users or environment can significantly influence its evolution. Positive feedback may lead to the reinforcement of certain features or designs, while negative feedback may prompt changes.
+
+8. **Evolutionary Design**: The system evolves over time through a process of natural selection, where the most successful features or components survive and less successful ones are discarded or modified.
+
+9. **Market and User Demand**: Market trends and user needs can greatly influence the direction of a system's development, often pushing it in directions not initially anticipated.
+
+10. **Regulatory and Compliance Forces**: Legal and compliance requirements can impose constraints on a system's design, often leading to architectures that prioritize compliance over other aspects.
+
+These forces often interact with each other, leading to complex dynamics that shape the emergent design of IT systems. Understanding these forces can help in managing and guiding the evolution of such systems.
