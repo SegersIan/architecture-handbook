@@ -106,3 +106,5 @@ To do good architecture, one must really try to understand the **needs of all th
 ## Technology Radar
 
 ## Application Radar
+
+## Talk about emergent design, usually design emerges from the path of least resistance (technically or from organization, like, which team had the least bandwith or knows the stakeholder best?, they get to implement features). Also identify what other "forces" impact systems or emergent design more specific.
