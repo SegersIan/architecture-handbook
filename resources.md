@@ -15,6 +15,7 @@
 *Note: I list only Articles/Blog/Posts that I have read and appreciate*
 
 * [Architecture Katas](https://nealford.com/katas/)
+* [Cognitive Load Types](https://mattwynne.net/cognitive-load-for-knowledge-work)
 * [Conway Law: Whitepaper](http://www.melconway.com/Home/Committees_Paper.html)
 * [How To Choose Microservice boundaries](https://www.linkedin.com/pulse/how-choose-microservices-boundaries-denis-baltor/)
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
@@ -24,6 +25,7 @@
 * [Enterprise Architects Join the Team (Rebecca J. Parson)](https://martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf)
 * [EA in the Lean Enterprise](https://martinfowler.com/articles/ea-in-lean-enterprise.html)
 * [Serverless and Clean Architecture](https://blog.serverlessadvocate.com/serverless-clean-architecture-code-with-domain-driven-design-852796846d28)
+
 ## Recommended Books
 
 *Note: I list only books that I have read and appreciate*
