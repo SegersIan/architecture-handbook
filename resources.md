@@ -26,6 +26,7 @@
 * [Enterprise Architects Join the Team (Rebecca J. Parson)](https://martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf)
 * [EA in the Lean Enterprise](https://martinfowler.com/articles/ea-in-lean-enterprise.html)
 * [Serverless and Clean Architecture](https://blog.serverlessadvocate.com/serverless-clean-architecture-code-with-domain-driven-design-852796846d28)
+* [Versioning in Event Driven Architectures (Book)](https://leanpub.com/esversioning/read)
 * [What is Event Modelling](https://eventmodeling.org/posts/what-is-event-modeling/)
 
 ## Recommended Books
