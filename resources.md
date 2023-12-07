@@ -17,6 +17,7 @@
 * [Architecture Katas](https://nealford.com/katas/)
 * [Cognitive Load Types](https://mattwynne.net/cognitive-load-for-knowledge-work)
 * [Conway Law: Whitepaper](http://www.melconway.com/Home/Committees_Paper.html)
+* [How (not) to do event versioning](https://event-driven.io/en/how_to_do_event_versioning/)
 * [How To Choose Microservice boundaries](https://www.linkedin.com/pulse/how-choose-microservices-boundaries-denis-baltor/)
 * [Who needs an architect? (Martin Fowler)](https://martinfowler.com/ieeeSoftware/whoNeedsArchitect.pdf)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
@@ -25,6 +26,7 @@
 * [Enterprise Architects Join the Team (Rebecca J. Parson)](https://martinfowler.com/ieeeSoftware/enterpriseArchitects.pdf)
 * [EA in the Lean Enterprise](https://martinfowler.com/articles/ea-in-lean-enterprise.html)
 * [Serverless and Clean Architecture](https://blog.serverlessadvocate.com/serverless-clean-architecture-code-with-domain-driven-design-852796846d28)
+* [What is Event Modelling](https://eventmodeling.org/posts/what-is-event-modeling/)
 
 ## Recommended Books
 
