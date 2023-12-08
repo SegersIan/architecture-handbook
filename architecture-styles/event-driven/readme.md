@@ -170,27 +170,31 @@ Examples:
 * Event-Driven + Microkernel
 * Event-Driven + Pipeline
 
+## Versioning
+
+[See Versioning](./versioning.md)
 
 ## Characteristics
 
 | Characteristic    | Rating       |
 | ---               | ---          |
 | Partitioning Type | Technical    |
-| Number of quanta  | 1 to many            |
-| Deployability     | ⭐⭐⭐          |
-| Elasticity        | ⭐⭐⭐          |
-| Evolutionary      | ⭐⭐⭐⭐⭐           |
-| Fault Tolerance   | ⭐⭐⭐⭐⭐           |
-| Modularity        | ⭐⭐⭐⭐           |
-| Overall cost      | ⭐⭐⭐ |
-| Performance       | ⭐⭐⭐⭐⭐        |
+| Number of quanta  | 1 to many    |
+| Deployability     | ⭐⭐⭐      |
+| Elasticity        | ⭐⭐⭐      |
+| Evolutionary      | ⭐⭐⭐⭐⭐ |
+| Fault Tolerance   | ⭐⭐⭐⭐⭐ |
+| Modularity        | ⭐⭐⭐⭐    |
+| Overall cost      | ⭐⭐⭐      |
+| Performance       | ⭐⭐⭐⭐⭐ |
 | Reliability       | ⭐⭐⭐      |
-| Scalability       | ⭐⭐⭐⭐⭐           |
-| Simplicity        | ⭐ |
-| Testability       | ⭐⭐        |
+| Scalability       | ⭐⭐⭐⭐⭐ |
+| Simplicity        | ⭐           |
+| Testability       | ⭐⭐         |
 
 ## Resources
 
 * [Building Event-Driven Microservices: Leveraging Organizational Data at Scale](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
+* [Versioning Events](https://leanpub.com/esversioning/read)
