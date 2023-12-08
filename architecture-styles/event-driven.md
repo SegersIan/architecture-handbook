@@ -9,6 +9,8 @@
 Made up of decoupled event processing components that asynchronously receive and process events.
 This architectural style can be used standalone or embedded with other architectural styles.
 
+> There is a difference between the architectural style of pure "Event-Driven" and events and event sourcing in general. Therefore, for more information specific to events and not the specific architectural style. See [Integration Architecture > events](../integration-architecture/events/readme.md).
+
 ### Request-Based & Event-Based
 Majority of processes in any architectural style are request-driven, using the request-based model. 
 In the event-based model, systems **react** to an event that happens. We are inverting the responsibility for systems to act accordingly.
@@ -172,7 +174,7 @@ Examples:
 
 ## Versioning
 
-[See Versioning](./versioning.md)
+[See Versioning](../topics/events/versioning.md)
 
 ## Characteristics
 
@@ -197,4 +199,3 @@ Examples:
 * [Building Event-Driven Microservices: Leveraging Organizational Data at Scale](https://www.oreilly.com/library/view/building-event-driven-microservices/9781492057888/)
 * [Fundamentals of Software Architecture](https://fundamentalsofsoftwarearchitecture.com/)
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
-* [Versioning Events](https://leanpub.com/esversioning/read)
