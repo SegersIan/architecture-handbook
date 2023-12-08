@@ -4,8 +4,11 @@
 
 ## Topics
 
-* [Versioning Events](./versioning.md)
+* [Event Versioning](./versioning.md)
+* [TODO] Event Modeling
+* [TODO] Event Stores/Sourcing ?
+* ...
 
 ## Resources
 
-* N/A
+* [What Is Event Modeling](https://eventmodeling.org/posts/what-is-event-modeling/)
