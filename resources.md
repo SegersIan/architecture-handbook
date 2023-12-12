@@ -9,6 +9,7 @@
 * [ByteByteGo](https://bytebytego.com/)
 * [Checklist Manifesto](https://en.wikipedia.org/wiki/The_Checklist_Manifesto)
 * [Platform Engineering Maturity Model](https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/)
+* [Software Engineering At Google](https://abseil.io/resources/swe-book/html/toc.html)
 
 ## Articles/Blog/Posts/Whitepapers/Tools
 
