@@ -18,10 +18,66 @@ There are scenarios where, either for performance reasons or in order to enable 
 
 Overall though, there are very few reasons why it may be considered for the type-based mechanism. Once brought out of your immediate system and put into a serialized form, the type system does very little. The upcasting system is often difficult to maintain amongst consumers; even with a centralized schema repository, it requires another service. In most scenarios where messages are being passed to/from disparate services, late-binding tends to be a better option.
 
+## Example Case Study
+
+> As we compare the different versioning approaches, we'll stick to the same "Example Case Study" for data schemas.
+
+The organization `Vinyltage` is in the business of pressing vinyl disks on-demand, using the following events/commands:
+* Command `PressVinyl` : Instructs to press a specific Vinyl.
+* Event `VinylPressStarted`
+    ```json
+    {
+        "EventId" : "<guid>",
+        "OrderId" : "orderId",
+        "MasterRecordId": "masterRecordId"
+    }
+    ```
+* Event `VinylPressSucceeded`
+    ```json
+    {
+        "EventId" : "<guid>",
+        "OrderId" : "orderId",
+        "MasterRecordId": "masterRecordId"
+    }
+    ```
+* Event `VinylPressFailed`
+    ```json
+    {
+        "EventId" : "<guid>",
+        "OrderId" : "orderId",
+        "MasterRecordId": "masterRecordId"
+    }
+    ```
+
+## Mapping Events Between Versions
+
+You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 and v2) on one of these two layers in your stack:
+* **Data Layer**: You take an event stream and migrate/copy all this events into a new event stream with a new format. During this process, one can join/split streams and such if desired. This is like a traditional data migration of a database, without editing the table in place, but rather creating a new table where you copy the new version into. In the Application Layer the schema of the event has to be updated to reflect the schema of the new stream. 
+* **Application Layer**: You don't change the original events but deal with versioning at run-time on application level.
+
+## Versioning Approaches
+
+| # | Name | Layer | 
+| ---  | ---   | --- |
+| 1 | Basic Type Based Versioning | Application |
+| 2 | Weak Schema Mapping | Application |
+| 3 | Weak Schema Wrapper | Application |
+| 4 | Negotiation | Application |
+| 5 | Copy and Replace | Data | 
+
+### 1. Basic Type Based Versioning
 
 
 
 
+### 2. Weak Schema Mapping
+### 3. Weak Schema Wrapper
+### 4. Negotiation
+### 5. Copy And Replace
+
+## General Concerns
+
+... todo
 
 ## Resources
 

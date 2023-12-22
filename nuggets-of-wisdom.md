@@ -31,6 +31,9 @@
 > Conway's law suggest major gains from designing software architecture and team interactions together, since they are similar forces.
 * Source: [Team Topologies Book](https://teamtopologies.com/book)
 
+> Promote software to a profit center, and demand strategic innovations as the only acceptable result.
+* Source: [Strategic Monoliths and Microservices - Driving Innovation Using Purposeful Architecture](https://learning.oreilly.com/library/view/strategic-monoliths-and/9780137355600/)
+
 ## TODO
 
 * Nuggets of wisdom list
