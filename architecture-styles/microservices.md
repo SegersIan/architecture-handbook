@@ -93,6 +93,10 @@ Diagrams:
 * [Saga Default](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_17011.png)
 * [Saga Compensating Transactions](https://fundamentalsofsoftwarearchitecture.com/images/book/fosa_12.png)
 
+## Nuggets Of Wisdom
+> The best way to think about microservices is not by defining the size, but rather by determining the purpose.
+* Source: [Strategic Monoliths and Microservices - Driving Innovation Using Purposeful Architecture](https://learning.oreilly.com/library/view/strategic-monoliths-and/9780137355600/)
+
 ## When To Use
 
 * When you desired high decoupling, so teams can move independently, at their own pace.
