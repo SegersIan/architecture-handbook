@@ -59,19 +59,15 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 
 | # | Name | Layer | 
 | ---  | ---   | --- |
-| 1 | Basic Type Based Versioning | Application |
+| 1 | Strong Schema - Basic Type Based Versioning | Application |
 | 2 | Weak Schema Mapping | Application |
 | 3 | Weak Schema Wrapper | Application |
 | 4 | Negotiation | Application |
 | 5 | Copy and Replace | Data | 
 
-### 1. Basic Type Based Versioning
-
-
-
-
-### 2. Weak Schema Mapping
-### 3. Weak Schema Wrapper
+### 1. Strong Schema - Basic Type Based Versioning
+### 2. Weak Schema - Mapping
+### 3. Weak Schema - Wrapper
 ### 4. Negotiation
 ### 5. Copy And Replace
 
