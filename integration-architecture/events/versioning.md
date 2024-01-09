@@ -18,36 +18,9 @@ There are scenarios where, either for performance reasons or in order to enable 
 
 Overall though, there are very few reasons why it may be considered for the type-based mechanism. Once brought out of your immediate system and put into a serialized form, the type system does very little. The upcasting system is often difficult to maintain amongst consumers; even with a centralized schema repository, it requires another service. In most scenarios where messages are being passed to/from disparate services, late-binding tends to be a better option.
 
-## Example Case Study
+## General Tips
 
-> As we compare the different versioning approaches, we'll stick to the same "Example Case Study" for data schemas.
-
-The organization `Vinyltage` is in the business of pressing vinyl disks on-demand, using the following events/commands:
-* Command `PressVinyl` : Instructs to press a specific Vinyl.
-* Event `VinylPressStarted`
-    ```json
-    {
-        "EventId" : "<guid>",
-        "OrderId" : "orderId",
-        "MasterRecordId": "masterRecordId"
-    }
-    ```
-* Event `VinylPressSucceeded`
-    ```json
-    {
-        "EventId" : "<guid>",
-        "OrderId" : "orderId",
-        "MasterRecordId": "masterRecordId"
-    }
-    ```
-* Event `VinylPressFailed`
-    ```json
-    {
-        "EventId" : "<guid>",
-        "OrderId" : "orderId",
-        "MasterRecordId": "masterRecordId"
-    }
-    ```
+* Only having additive changes as opposed to destructive ones.
 
 ## Mapping Events Between Versions
 
@@ -60,20 +33,71 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 | # | Name | Layer | 
 | ---  | ---   | --- |
 | 1 | Strong Schema - Basic Type Based Versioning | Application |
-| 2 | Weak Schema Mapping | Application |
-| 3 | Weak Schema Wrapper | Application |
+| 2 | Weak Schema - Mapping | Application |
+| 3 | Weak Schema - Wrapper | Application |
 | 4 | Negotiation | Application |
 | 5 | Copy and Replace | Data | 
 
 ### 1. Strong Schema - Basic Type Based Versioning
+
+#### Description
+
+* Explicit versions of a data schema are defined (e.g. v1, v2, ...)
+* Data schema is expected to match 1:1 with the serialized type (e.g. WalletCreatedEvent).
+* Multiple versions of a single schema are possible, but a type per version is required (e.g. WalletCreatedEvent_v1 and WalletCreatedEvent_v2).
+* A new version of an event must be convertible from the old version of the event. If not, it is not a new version of the event but rather a new event.
+* Upcasting logic : The logic to convert from an old to a new version is upcasting logic.
+* The Ports/Adapters architecture allows you to decouple the version specific type (e.g. WalletCreatedEvent_v1) from your core business logic. Isolating your core from version changes. Alternatively you only pass the latest version (e.g. WalletCreatedEvent_latest), cause any old version should be able to be converted to the latest version.
+* Double Publish: Avoid the issues that arise from having old consumers that do not understand the new version of the event. The idea is to have the new version of the producer write both the _v1 and the _v2 versions of the event when it writes. Downstream consumers can decide to ignore the newer version.
+
+#### Pro
+* todo...
+
+#### Con
+* If versions are not managed, it can become a mess (e.g. WalletCreated_v1 ... WalletCreated_v17) - method explosion.
+* Serialize an Enum with a value that is not supported yet in the local strong schema requires dedicated logic.
+* All consumers must be updated to understand the schema before a producer is updated.
+
 ### 2. Weak Schema - Mapping
+
+#### Description
+
+#### Pro
+
+#### Con
+* Serialize an Enum with a value that is not supported yet in the local strong schema requires dedicated logic.
+
 ### 3. Weak Schema - Wrapper
+
+#### Description
+
+#### Pro
+* Can serialize an Enum with a value that is not supported yet in the local strong schema.
+
+#### Con
+
 ### 4. Negotiation
+
+#### Description
+
+#### Pro
+
+#### Con
+
 ### 5. Copy And Replace
+
+#### Description
+
+#### Pro
+
+#### Con
 
 ## General Concerns
 
-... todo
+### Versioning Of Behavior
+
+If you find yourself putting branching logic or calculation logic in a projection, especially if it is based on time, you are probably missing logic in the creation of that event.
+
 
 ## Resources
 
