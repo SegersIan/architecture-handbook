@@ -42,6 +42,7 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 
 #### Description
 
+* Assumes your serializer has no support for versioning.
 * Explicit versions of a data schema are defined (e.g. v1, v2, ...)
 * Data schema is expected to match 1:1 with the serialized type (e.g. WalletCreatedEvent).
 * Multiple versions of a single schema are possible, but a type per version is required (e.g. WalletCreatedEvent_v1 and WalletCreatedEvent_v2).
@@ -54,27 +55,78 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 * todo...
 
 #### Con
-* If versions are not managed, it can become a mess (e.g. WalletCreated_v1 ... WalletCreated_v17) - method explosion.
+* If versions are not managed, it can become a mess (e.g. WalletCreatedEvent_v1 ... WalletCreatedEvent_v17) - method explosion in the upcasting logic.
 * Serialize an Enum with a value that is not supported yet in the local strong schema requires dedicated logic.
 * All consumers must be updated to understand the schema before a producer is updated.
+* Upcasting is difficult to maintain.
 
 ### 2. Weak Schema - Mapping
 
 #### Description
 
+* Assumes your serializer can have support for versioning.
+* More rules that must be followed (than Strong Schema), it also offers more flexibility, providing the rules are followed.
+* When mapping, you look at the json and at the instance:
+    * Exists on json and instance -> value from json
+    * Exists on json but not on instance -> NOP/Ignore
+    * Exists on instance but not in json -> default value
+* Only the current version of a data schema is defined (so no WalletCreatedEvent_v1 ... WalletCreatedEvent_v17, just WalletCreatedEvent).
+    * That current version and the latest version are the same here, however that might not be reality.
+* Data schema is **not** expected to match 1:1 with the serialized type (e.g. WalletCreatedEvent).
+* Rule: You are no allowed to rename an attribute, unless you provide the old and name attribute with exact same value, but that translates in extra complexity, and is frankly, just annoying.
+* Validation: You might need validation logic that validates if (after mapping) the mandatory fields are present/set and if to apply the correct defaults for absent fields.
+
 #### Pro
+
+* Relatively easy to implement with a "custom" JSON parser, default values, and/or a fluent API.
+
 
 #### Con
 * Serialize an Enum with a value that is not supported yet in the local strong schema requires dedicated logic.
 
 ### 3. Weak Schema - Wrapper
 
+```
+public class WalletCreatedEvent {
+    private JObject _json;
+
+    public WalletCreatedEvent(string json){
+        _json = JObject.parse(json);
+    }
+
+    public Guid Id { 
+        get {return Guid.Parse(_json["id"]);}
+        set {_json["id"] = value.ToString();}
+    }
+
+    public string Name { 
+        get {return _json["name"];}
+        set {_json["name"] = value;}
+    }   
+}
+```
+
 #### Description
+
+* Assumes your serializer can have support for versioning.
+* More rules that must be followed (than Strong Schema), it also offers more flexibility, providing the rules are followed.
+* In essence, you create a wrapper around the generic JSON object (e.g. JObject) with your Getters/Setters that either read/write the value from the JSON object at access time. In these Getter methods, logic can be placed for default values for missing fields.
+* Only the current version of a data schema is defined (so no WalletCreatedEvent_v1 ... WalletCreatedEvent_v17, just WalletCreatedEvent).
+    * That current version and the latest version are the same here, however that might not be reality.
+* Data schema is **not** expected to match 1:1 with the serialized type (e.g. WalletCreatedEvent).
+* Rule: You are no allowed to rename an attribute, unless you provide the old and name attribute with exact same value, but that translates in extra complexity, and is frankly, just annoying.
+
 
 #### Pro
 * Can serialize an Enum with a value that is not supported yet in the local strong schema.
+* You can "pass through" the original JSON/XML and pass it on for serialization, this way, the entire original structure is kept that was not used by the internal model of that event in your service.
+    * Common for document-based systems.
 
 #### Con
+
+* More work than Weak Schema - Mapper or Strong Schema.
+* The internal implementation of the wrapper might warrant memory efficient implementation in high-performance systems (e.g. `JObject.Parse()` might not be most memory efficient)
+* Some formats (e.g flatbutters) might only allow you to evolve a schema by appending to the end of the schema. (Such formats might be enforced by the need for efficient implementation).
 
 ### 4. Negotiation
 
