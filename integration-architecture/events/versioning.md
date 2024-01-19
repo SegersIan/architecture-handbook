@@ -30,13 +30,13 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 
 ## Versioning Approaches
 
-| # | Name | Layer | 
-| ---  | ---   | --- |
-| 1 | Strong Schema - Basic Type Based Versioning | Application |
-| 2 | Weak Schema - Mapping | Application |
-| 3 | Weak Schema - Wrapper | Application |
-| 4 | Negotiation | Application |
-| 5 | Copy and Replace | Data | 
+| # | Name | Layer | Communication Direction |
+| ---  | ---   | --- | --- |
+| 1 | Strong Schema - Basic Type Based Versioning | Application | Uni-directional |
+| 2 | Weak Schema - Mapping | Application | Uni-directional |
+| 3 | Weak Schema - Wrapper | Application | Uni-directional |
+| 4 | Negotiation | Application | Bi-directional |
+| 5 | Copy and Replace | Data | Not Applicable |
 
 ### 1. Strong Schema - Basic Type Based Versioning
 
@@ -64,6 +64,7 @@ You can do the mapping logic of an event between versions (e.g. OrderPlaced v1 a
 
 #### Description
 
+* Probably the better "Default" option.
 * Assumes your serializer can have support for versioning.
 * More rules that must be followed (than Strong Schema), it also offers more flexibility, providing the rules are followed.
 * When mapping, you look at the json and at the instance:
@@ -130,13 +131,54 @@ public class WalletCreatedEvent {
 
 ### 4. Negotiation
 
+
+
 #### Description
+
+* Assumes Bi-Directional communications.
+* We assume Atom Feeds as an example of this approach.
+* Consumer can *negotiate* the format of the message which the message arrives in.
+* Most common transport layer of such negotiation is HTTP.
+* [Atom Feeds](https://datatracker.ietf.org/doc/html/rfc4287) are a good example of this.
+* In a request a header can be used as `Accept: <some format>+<some version of the format>` (e.g. `Accept: WalletCreated_JSON+v2`).
+* An atom feed response returns `uri's` which allows you to page through all events of a given stream. URIs will have the right parameters in the url regarding paging (e.g. `/stream/page_1`).
+* TIP: You can implement this entire pattern on top of other transports, even message queues. The key is that the payload is not send via the main feed, but an URI/accessor instead.
+    * e.g.
+    ```
+    WalletCreatedEvent{
+        id: '<some-message-id>',
+        type: 'WalletCreatedEvent',
+        uri: '/messages/<some-message-id>'
+    }
+    ```
+    * This allows for doing a GET request with content negotiation to the resource in desired format and version.
+    * alternatively the message already exposed negotiation:
+    ```
+    WalletCreatedEvent{
+        id: '<some-message-id>',
+        type: 'WalletCreatedEvent',
+        uri_json: '/messages/json/<some-message-id>',
+        uri_xml: '/messages/xml/<some-message-id>'
+    }
+    ```
+    * An announcement message is sent over the queue or previously over the Atom feed. Upon receipt of the announcement, the client must then fetch the message in the format they prefer. While quite flexible, this method is less than optimal in terms of performance, as it requires a request per message.
+    * For scaling, there are methods for a consumer to pre register what content-types it is open to support, so not every request there is a content negotiation.
+    * The producer will have to have downcast and/or upcast logic for the consumers and their requested type.
+        * Limit the amount of supported versions to avoid version conversation code to blow up.
 
 #### Pro
 
+* The producer instead of all the consumers, must "know all formats and versions". The Consumers only their requested format and version of choice.
+* Many of the URIs can be cached, allowing for easy scalability, cause there might be many consumers calling the producer.
+
 #### Con
 
+* More complex and effort.
+* Requires some extra effort to optimize at high performance systems (e.g. negotiate in advance), but can work!
+
 ### 5. Copy And Replace
+
+... todo
 
 #### Description
 
@@ -148,8 +190,27 @@ public class WalletCreatedEvent {
 
 ### Versioning Of Behavior
 
-If you find yourself putting branching logic or calculation logic in a projection, especially if it is based on time, you are probably missing logic in the creation of that event.
+If you find yourself putting branching logic or calculation logic in a projection, especially if it is based on time, you are probably missing logic in the creation of that event. A good example is the calculation of an invoice with Tax. The tax value might change over time. Make sure the event lists the tax value that was used, cause this value might change over time in the code. It may be worth including a description field even if only a string that describes the type of calculation made.
 
+### Exterior Calls
+
+Exterior calls are seldom idempotent. Try  to model the event post external call to contain all the information necessary so that downstream wise, you can replay with the result of the exterior call (e.g. PaymentSucceededEvent). Note that some information is just not allowed to be stored (credit card details).
+
+A related problem to this happens when projections start doing lookups to other projections. If you find a projection making calls to external services or to other projections it will be a problem to replay later. As example there could be a customer table managed by a CustomerProjection and an orders table managed by an OrdersProjection. Instead of having the OrdersProjection listen to customer events the decision was made to have it lookup in the CustomerProjection what the current Customer Name is to copy into the orders table. This can save time and duplication in the OrdersProjection code.
+
+### Changing Semantic Meaning
+
+One important aspect of versioning is that semantic meaning cannot change between versions of software. There is no good way for a downstream consumer to understand a semantic meaning change. An example would be that the value for the `temperature` field went from Celsius to Fahrenheit.
+
+### Snapshots
+
+If you make snapshots for read efficiency, consider to still keep the original events, in case snapshots need to be regenerated or evolve over time.
+
+In general, you can delete the old snapshots and then regenerate all snapshots based on updated logic/domain. If you need it side by side (an old an new version of a snapshot), regenerate the new snapshots and make sure you can handle both snapshot models in production. At a later stage the older snapshot model can be deprecated.
+
+### Avoid "and"
+
+If an event has "and" in the name (e.g. `TicketPaidForAndIssued`) consider to split into separate events. There is no need for a 1:1 relationship to "event received > process > output single event". Sometimes there are no output events necessary or multiple might.
 
 ## Resources
 
